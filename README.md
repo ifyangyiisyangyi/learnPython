@@ -1,4 +1,4 @@
 # learnPython
 
 ### python基础
-- 数据类型和变量
+- 2018/6/11 day_01
