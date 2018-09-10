@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+# -*- coding: utf-8 -*-
 class Student(object):
 	def __init__(self, name, score):
 		self.name = name
@@ -6,7 +6,7 @@ class Student(object):
 	def get_grade(self):
 		if self.score >= 90:
 			return 'A'
-		elif self.score >=60:
+		elif self.score >= 60:
 			return 'B'
 		else:
 			return 'C'
