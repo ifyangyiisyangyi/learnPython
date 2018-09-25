@@ -20,3 +20,8 @@
 # with方法写文件
 # with open('c:/aaa/aaa.txt', 'w') as f:
 	# f.write('hello, world')
+
+# 追加
+# with open('c:/aaa/aaa.txt', 'a') as f:
+# 	f.write("\n""second line")
+
