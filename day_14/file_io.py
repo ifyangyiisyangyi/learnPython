@@ -25,3 +25,8 @@
 # with open('c:/aaa/aaa.txt', 'a') as f:
 # 	f.write("\n""second line")
 
+# 按行读取
+# with open('c:/aaa/aaa.txt', 'r') as f:
+# 	for line in f.readlines():
+# 		print(line.strip())
+
