@@ -28,11 +28,34 @@ def get_li(doc):
 		star = i.find('div', attrs = {'class' : 'star'})
 		# print(star)
 		star_num = star.find(text = re.compile('评价'))  # 评价人数
-		print(star_num)
+		# print(star_num)
 		score_single = detail2.find('span', attrs = {'class' : 'rating_num'}).get_text() # 评分
 		# print(score_single)
 		comment = detail2.find('span', attrs = {'class' : 'inq'}).get_text() # 短评
 		# print(comment)
+		# print('--------------')
+		name.append(movie_name)    # 电影名追加到列表中
+		star_con.append(star_num)
+		score.append(score_single)
+		info_list.append(comment)
+	# print(info_list)
+	page = soup.find('span', attrs = {'class' : 'next'}).find('a') # 获取下一页
+	# print(page)
+	print(page.get('href')) # 提取href的信息
+	print(page['href']) #同上
+	print(isinstance(page, dict))   # 此处不知道page是什么类型
+	print(DOWNLOAD_URL + page.get('href'))
+	if page:
+		return name, star_con, score, info_list, DOWNLOAD_URL + page.get('href')
+	return name, star_con, score, info_list, None 	# Beautiful 里的find 仅返回一个结果，如果找不到，就返回None
+
+# 把结果保存到excel中
+def main():
+	url = DOWNLOAD_URL
+	name = []
+	star_con = []
+	score = []
+	info = []
 
 doc = download_page(DOWNLOAD_URL)
 get_li(doc)
