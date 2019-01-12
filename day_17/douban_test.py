@@ -62,11 +62,12 @@ def get_li(doc):
 	cursor = db.cursor()
 	
 	# 使用 execute()  方法执行 SQL 查询 
-	cursor.execute("select * from books_info")
+	cursor.execute("select version()")
 	
 	# 使用 fetchone() 方法获取单条数据.
 	data = cursor.fetchone()
 	
+	print("mysql version is : %s" %data)
 	print(data)
 
 	# 关闭数据库连接
@@ -83,24 +84,8 @@ def get_li(doc):
 	# 	return name, star_con, score, info_list, DOWNLOAD_URL + page.get('href')
 	return name, star_con, score, info_list, None 	# Beautiful 里的find 仅返回一个结果，如果找不到，就返回None
 
-# 初始化pymysql
-def init_mysql():
-	db = pymysql.connect("localhost","root","123","douban_books")
-	# 使用 cursor() 方法创建一个游标对象 cursor
-	cursor = db.cursor()
-	
-	# 使用 execute()  方法执行 SQL 查询 
-	cursor.execute("select * from books_info")
-	
-	# 使用 fetchone() 方法获取单条数据.
-	data = cursor.fetchone()
-	
-	print(data)
-
-	# 关闭数据库连接
-	db.close()
-
 def main():
+	print("1")
 	url = DOWNLOAD_URL
 	name = []
 	star_con = []
