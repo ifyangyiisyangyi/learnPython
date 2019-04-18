@@ -53,7 +53,7 @@ print(get_user_id(get_app_token(url)))
 # 获取设备登录token
 
 def get_robot_token(url):
-    url = url + "/robot-login"
+    urll = url + "/robot-login"
     headers = {
         "Accept": "application/vnd.luka.v1.15+json",
         "Content-Type": "application/json",
@@ -67,29 +67,54 @@ def get_robot_token(url):
             }
         }
     }
-    result = requests.put(url = url, headers = headers, data = json.dumps(data))
+    result = requests.put(url = urll, headers = headers, data = json.dumps(data))
     result = json.loads(result.text)
     token = result["data"]["token"]
     return token
 
 # robot登录
-def robot_login(url):
-    url = url + "/robot-login"
+# def robot_login(url):
+#     url = url + "/robot-login"
+#     headers = {
+#         "Accept": "application/vnd.luka.v1.15+json",
+#         "Content-Type": "application/json",
+#         "Accept-Language": "zh_CN"
+#     }
+#     data = {
+#         "data": {
+#             "type": "robot-login",
+#             "attributes": {
+#             "udid": udid
+#             }
+#         }
+#     }
+#     result = requests.put(url = url, headers = headers, data = json.dumps(data))
+#     print("yy")
+#     return
+
+# robot_login(url)
+
+# robot绑定app端用户
+
+def robots_bind(user_id,token):
+    urll = url + "/robots-binds" + user_id
+    Authorization = "Bearer" + token
     headers = {
+        "Authorization":Authorization,
         "Accept": "application/vnd.luka.v1.15+json",
         "Content-Type": "application/json",
         "Accept-Language": "zh_CN"
     }
     data = {
-        "data": {
-            "type": "robot-login",
-            "attributes": {
-            "udid": udid
-            }
+            {
+
         }
+
     }
-    result = requests.put(url = url, headers = headers, data = json.dumps(data))
-    print("yy")
+    result = requests.put(url = urll, headers = headers, data = json.dumps(data))
+    print(result.text)
+    print("pass")
     return
 
-robot_login(url)
+user_id = get_user_id(get_app_token(url))
+robots_bind(user_id,get_robot_token(url))
