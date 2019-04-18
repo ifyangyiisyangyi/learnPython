@@ -60,9 +60,11 @@ def nlu_chat(token, url):
             print("————————————————————————————————————————————")
             print(words)
             engine = pyttsx3.init()
-            engine.say("撸卡撸卡")
+            engine.say("卢卡卢卡")
             engine.say(words)
             engine.runAndWait()
+
+            
             result = requests.post(url=url, headers=headers, data=json.dumps(data))
             result = json.loads(result.text)   
             script = base64.b64decode(result["data"]["script"]) 
