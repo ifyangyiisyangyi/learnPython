@@ -1,11 +1,10 @@
 import requests
 import json
 
-name = "18859285396"
-password = "123456a"
-udid = "FRFFBZYP"
-
-url = "http://luka-api.test1.k8s-qa.linglove.cn"
+name = "18859285396"   # app 账号
+password = "123456a"   
+udid = "FRFFBZYP"      # 设备码
+url = "http://luka-api.test1.k8s-qa.linglove.cn"   # 环境地址
 
 # 获取app登录token
 
@@ -72,32 +71,12 @@ def get_robot_token(url):
     token = result["data"]["token"]
     return token
 
-# robot登录
-# def robot_login(url):
-#     url = url + "/robot-login"
-#     headers = {
-#         "Accept": "application/vnd.luka.v1.15+json",
-#         "Content-Type": "application/json",
-#         "Accept-Language": "zh_CN"
-#     }
-#     data = {
-#         "data": {
-#             "type": "robot-login",
-#             "attributes": {
-#             "udid": udid
-#             }
-#         }
-#     }
-#     result = requests.put(url = url, headers = headers, data = json.dumps(data))
-#     print("yy")
-#     return
 
-# robot_login(url)
 
 # robot绑定app端用户
 
 def robots_bind(user_id,token):
-    urll = url + "/robots-binds" + user_id
+    urll = url + "/robots-binds/" + user_id
     Authorization = "Bearer" + token
     headers = {
         "Authorization":Authorization,
@@ -105,16 +84,12 @@ def robots_bind(user_id,token):
         "Content-Type": "application/json",
         "Accept-Language": "zh_CN"
     }
-    data = {
-            {
-
-        }
-
-    }
-    result = requests.put(url = urll, headers = headers, data = json.dumps(data))
-    print(result.text)
-    print("pass")
+    result = requests.put(url = urll, headers = headers)
+    result = json.loads(result.text)
+    print(result["errmsg"])
     return
 
-user_id = get_user_id(get_app_token(url))
-robots_bind(user_id,get_robot_token(url))
+
+if __name__ == "__main__":
+    user_id = get_user_id(get_app_token(url))   # 获取user_id
+    robots_bind(user_id,get_robot_token(url))   # 进行绑定
