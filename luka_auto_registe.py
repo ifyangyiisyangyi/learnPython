@@ -5,9 +5,11 @@ import json
 import pymysql
 import re
 from time import sleep
+import sys
 
 url = "http://luka-api.test1.k8s-qa.linglove.cn"  # 测试环境地址
-name = "18101287746"                             # 要注册的手机号码
+name = sys.argv[1]                             # 要注册的手机号码, python <script> <number>
+name = str(name)
 
 def send_captcha(url):
     print("发送验证码...")
@@ -28,7 +30,7 @@ def send_captcha(url):
         }
     }
     result = requests.post(url=urll, headers=headers, data=json.dumps(data))
-    print(result.status_code)
+    # print(result.status_code)
     print(result.text)
     return
 
@@ -41,7 +43,7 @@ def get_captcha():
     # print ("Database version : %s " % data)
     sql_str = "手机号" + name + "的验证码%"
     sql = "select description from activity_log where description like" + "'" + sql_str + "'"
-    print(sql)
+    # print(sql)
     # sql = "select description from activity_log where description like '手机号18101287746的验证码%'"
     cursor.execute(sql)
     captcha_result = cursor.fetchone()
@@ -76,7 +78,7 @@ def app_register():
         }
     }
     result = requests.post(url=urll, headers=headers, data=json.dumps(data))
-    print(result.status_code)
+    # print(result.status_code)
     print(result.text)
     return
 
