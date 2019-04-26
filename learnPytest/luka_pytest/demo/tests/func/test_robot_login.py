@@ -49,9 +49,11 @@ def get_robot_token(udid):
 
 
 class TestCase():
-    def test_case_one(self):
+    @pytest.mark.smoke   # 标记为冒烟测试用例
+    def test_robot_login_case1(self):
         print("luka 8 位设备码测试")
         assert robot_login("FRFFBZYP") == "success"
-    def test_case_two(self):
+    @pytest.mark.p1    # 标记为P1测试用例
+    def test_robot_login_case2(self):
         print("luka hero 10 位设备码测试")
         assert robot_login("24NQRQ9Z2L") == "success"
