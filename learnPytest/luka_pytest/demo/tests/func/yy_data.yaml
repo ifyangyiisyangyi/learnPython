@@ -1,2 +1,12 @@
-url:
+# 线下测试环境
+offline_url:
   http://luka-api.test1.k8s-qa.linglove.cn
+# 线上测试环境
+online_url:
+  https://luka-api.ling.cn
+# 预上线测试环境
+pre_url:
+  https://luka-prerelease.ling.cn
+# 接口版本
+api_version:
+  v1.15
