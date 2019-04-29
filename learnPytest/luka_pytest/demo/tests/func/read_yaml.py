@@ -11,5 +11,7 @@ yamlPath = os.path.join(filePath, "yy_data.yaml")  # 路径拼接，返回配置
 f = open(yamlPath, 'r', encoding = 'utf-8') 
 result = f.read()
 test_data = yaml.load(result)
-print(type(test_data))
-print(test_data)
+# print(type(test_data))
+# print(test_data)
+
+        
