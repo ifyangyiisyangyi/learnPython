@@ -1,14 +1,14 @@
-
+'''
+登录接口测试
+'''
 
 import pytest
 import requests
 import json
-
-
-url = "http://luka-api.test1.k8s-qa.linglove.cn"
+import read_yaml
 
 def robot_login(udid):
-    urll = url + "/robot-login"
+    urll = read_yaml.test_data["url"] + "/robot-login"
     headers = {
         "Accept": "application/vnd.luka.v1.15+json",
         "Content-Type": "application/json",
@@ -28,7 +28,7 @@ def robot_login(udid):
     return result
 
 def get_robot_token(udid):
-    urll = url + "/robot-login"
+    urll = read_yaml.test_data["url"] + "/robot-login"
     headers = {
         "Accept": "application/vnd.luka.v1.15+json",
         "Content-Type": "application/json",
@@ -46,7 +46,6 @@ def get_robot_token(udid):
     result = json.loads(result.text)
     token = result["data"]["token"]
     return token
-
 
 class TestCase():
     @pytest.mark.smoke   # 标记为冒烟测试用例
