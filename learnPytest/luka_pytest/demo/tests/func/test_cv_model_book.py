@@ -1,18 +1,21 @@
-
-
+'''
+绘本识别测试
+'''
 import test_robot_login
 import pytest
 import requests
 import json
+import read_yaml
+import get_robot_token
 
-url = "http://luka-api.test1.k8s-qa.linglove.cn"
+
 udid = "FRFFBZYP"
 book_id = "50"
+token = get_robot_token.get_robot_token(udid)
 
 def cv_model_book(book_id):
-    token = test_robot_login.get_robot_token(udid)
     # print(token)
-    urll = url + "/cv/model/book/" + book_id
+    urll = read_yaml.test_data["url"] + "/cv/model/book/" + book_id
     # print(urll)
     headers = {
         "Authorization":"Bearer" + token,

@@ -1,2 +1,19 @@
+# 测试环境
 url:
-  http://luka-api.test1.k8s-qa.linglove.cn
+  http://luka-api.test1.k8s-qa.linglove.cn   # 线下测试环境
+
+  # https://luka-api.ling.cn   # 线上测试环境
+
+  # https://luka-prerelease.ling.cn  # 预上线测试环境
+
+
+# 接口版本
+api_version:
+  # v1.15  
+  # v1.13
+  v1.14
+
+# 语言
+lang:
+  zh_CN
+

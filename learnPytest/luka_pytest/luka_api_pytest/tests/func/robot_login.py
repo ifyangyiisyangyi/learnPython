@@ -6,6 +6,7 @@ import pytest
 import requests
 import json
 
+offline_url = "http://luka-api.test1.k8s-qa.linglove.cn"
 def robot_login(udid):
     url = offline_url + "/robot-login"
     headers = {
@@ -23,4 +24,4 @@ def robot_login(udid):
     }
     result = requests.put(url = url, headers = headers, data = json.dumps(data))
     result = json.loads(result.text)
-    return result
+    return result["errmsg"]
