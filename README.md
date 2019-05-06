@@ -9,3 +9,4 @@
 
 3.[pytest框架学习](https://github.com/ifyangyiisyangyi/learnPython/tree/master/learnPytest)
 
+4.[boss直聘爬取岗位信息](https://github.com/ifyangyiisyangyi/learnPython/blob/master/boss_spider.py)
