@@ -38,3 +38,5 @@ class TestCase():
     def test_robot_login_case2(self):
         print("luka hero 10 位设备码测试")
         assert robot_login("24NQRQ9Z2L") == "success"
+
+
