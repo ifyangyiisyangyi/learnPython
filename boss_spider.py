@@ -4,6 +4,7 @@
 import requests
 import re
 from bs4 import BeautifulSoup
+import json
 
 def get_html(url):
 
@@ -16,33 +17,48 @@ def get_html(url):
     #     'query' : '自动化测试',
     #     'city' : '101010100'
     # }
-    r = requests.request('get', url = url,  headers = headers)
-    # print(r.status_code)
-    html = r.content
-    # print(html)
-    return html
+    try:
+        r = requests.request('get', url = url,  headers = headers)
+    except:
+        print(r.status_code)
+        print(r.text)
+        print("请求出错啦")
+    else:
+        # print(r.status_code)
+        html = r.content
+        # print(html)
+        return html
 
 def get_con(html):
     soup = BeautifulSoup(html, 'html.parser')
-    positon_list = soup.find('div', attrs = {'class' : 'job-list'}) # 找到岗位信息
+    job_list = soup.find('div', attrs = {'class' : 'job-list'}) # 找到岗位信息
     page = soup.find('div', attrs = {'class' : 'page'}) # 找到页码信息
-    next_page = page.find('a', attrs = {'class' : 'next'})
-    # print(next_page.get('href'))
-    name = []
-    for i in positon_list.find_all('li'): 
-        position = i.find('div', attrs = {'class' : 'info-company'})
-        position = position.find('div', attrs = {'class' : 'company-text'})
-        position = position.find('h3', attrs = {'class' : 'name'})
-        position = list(position.find('a').string)        # 把岗位名称提取出来
-        if len(position) > 1:
-            x = position[0] + position[1]
-        else:
-            x = position[0]
-        name.append(x)
-    if next_page:
-        return name, next_page.get('href')
+    # print(page)
+    next_page = page.find('a', attrs = {'class' : 'next'}).get('href')
+    print(html)
+  
+    for i in job_list.find_all('li'): 
+        job_info = {}
+        companyName = i.find('div', attrs = {'class' : 'info-company'}).find('div', attrs = {'class' : 'company-text'}).find('h3', attrs = {'class' : 'name'}).find('a').string
+        position = i.find('div', attrs = {'class' : 'info-primary'}).find('h3', attrs = {'class' : 'name'}).find('div', attrs = {'class' : 'job-title'}).string
+        salary = i.find('div', attrs = {'class' : 'info-primary'}).find('h3', attrs = {'class' : 'name'}).find('span', attrs = {'class' : 'red'}).string
+        other = i.find('div', attrs = {'class' : 'info-primary'}).find('p')
+        other = [text.strip() for text in other.find_all(text=True) if text.parent.name !='em' and text.strip()]
+        job_info['companyName'] = companyName
+        job_info['position'] = position
+        job_info['salary'] = salary
+        job_info['other'] = other
+        job_info = json.dumps(job_info, ensure_ascii=False)
+        print('****************************')
+        print(job_info, type(job_info))
+        with open('job_info.txt', 'a+') as f:
+            f.write(job_info + '\n')
+            
+                
+    if next_page != 'javascript':
+        return next_page
     else:
-        return name, None
+        return None
 
 
 class PositionInfo(object):
@@ -63,18 +79,13 @@ def main():
     url = 'https://www.zhipin.com/job_detail/?query=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&city=101010100&industry=&position='
     # query = '/job_detail/?query=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&city=101010100&industry=&position='
     # url = url + query
-    
-    position_list = []
     while url:
         # query = '/job_detail/?query=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&city=101010100&industry=&position='
         # url = url + query
         html = get_html(url)
-        name, query = get_con(html)
-       
+        query = get_con(html)
         url = 'https://www.zhipin.com' + query
-        position_list = position_list + name
-   
-        for i in position_list:
-            print(i)
+        # for i in companyName:
+        #     print(i)
 if __name__ == "__main__":
     main()
