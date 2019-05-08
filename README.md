@@ -1,3 +1,9 @@
+<p align="center">
+  <img src="http://img.soogif.com/mb4M0v0GNa0qD3fX8hTjJoZJ26y60IEE.gif"/><br><br>
+  <br> <strong>每天进步一点点</strong>
+</p>
+
+
 # learnPython
 
 ### python基础
