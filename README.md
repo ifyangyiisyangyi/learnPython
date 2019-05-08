@@ -1,13 +1,10 @@
 <p align="center">
-  <img src="http://img.soogif.com/ChyENLCrXxZVZgi43EDS7tHBnAZvQM5S.gif_s400x0"/><br><br>
-  <br> <strong>每天进步一点点</strong>
+  <img src="http://img.soogif.com/ChyENLCrXxZVZgi43EDS7tHBnAZvQM5S.gif_s400x0"/>
 </p>
 
 
 # learnPython
 
-### python基础
-- 2018/6/11 day_01
 
 1.[绑定luka的脚本](https://github.com/ifyangyiisyangyi/learnPython/blob/master/day_20/luka_auto_bind.py)
 
