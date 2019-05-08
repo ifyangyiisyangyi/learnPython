@@ -1,0 +1,299 @@
+{"companyName": "VIPKID", "position": "自动化测试", "salary": "30k-50k", "other": ["北京 朝阳区 十里堡", "3-5年", "本科"]}
+{"companyName": "捷科智诚", "position": "自动化测试工程师", "salary": "10k-15k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "亚信科技", "position": "自动化测试", "salary": "9k-14k", "other": ["北京 西城区 西直门", "5-10年", "本科"]}
+{"companyName": "中软国际", "position": "自动化测试", "salary": "9k-14k", "other": ["北京 海淀区 海淀北部新区", "1-3年", "本科"]}
+{"companyName": "捷科智诚", "position": "自动化测试", "salary": "7k-12k", "other": ["北京 朝阳区 望京", "经验不限", "本科"]}
+{"companyName": "神州信息", "position": "自动化测试", "salary": "6k-12k", "other": ["北京 昌平区 回龙观", "3-5年", "大专"]}
+{"companyName": "捷科智诚", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "奥鹏远程教育", "position": "自动化测试主管", "salary": "26k-35k·15薪", "other": ["北京 海淀区 魏公村", "5-10年", "本科"]}
+{"companyName": "狸米科技", "position": "自动化测试工程师", "salary": "18k-35k", "other": ["北京 朝阳区 北苑", "3-5年", "本科"]}
+{"companyName": "百度", "position": "高级自动化测试工程师", "salary": "25k-35k", "other": ["北京 海淀区 西北旺", "5-10年", "本科"]}
+{"companyName": "数字认证", "position": "自动化测试工程师", "salary": "11k-22k", "other": ["北京 海淀区 中关村", "1-3年", "本科"]}
+{"companyName": "狮桥资本", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "民生科技", "position": "自动化测试", "salary": "16k-32k", "other": ["北京 东城区 安定门", "经验不限", "本科"]}
+{"companyName": "海鑫科金", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 丰台区 世界公园", "3-5年", "本科"]}
+{"companyName": "纵情向前", "position": "移动端自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "ADVANCE", "position": "自动化测试工程师", "salary": "25k-35k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "EASYSTACK", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "四维图新", "position": "自动化测试工程师", "salary": "12k-22k", "other": ["北京 海淀区 西北旺", "5-10年", "本科"]}
+{"companyName": "声智科技", "position": "自动化测试", "salary": "15k-20k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "浪潮集团", "position": "自动化测试", "salary": "8k-15k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "软通动力信息技术集团", "position": "自动化测试工程师", "salary": "10k-15k", "other": ["北京", "3-5年", "大专"]}
+{"companyName": "山立信息", "position": "自动化测试工程师", "salary": "8k-15k", "other": ["北京 西城区 积水潭", "1-3年", "本科"]}
+{"companyName": "阿里健康", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "好未来", "position": "自动化测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "旅悦", "position": "接口自动化测试", "salary": "12k-20k", "other": ["北京 海淀区 清河", "5-10年", "本科"]}
+{"companyName": "灵雀云", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 中关村", "1-3年", "本科"]}
+{"companyName": "广联达", "position": "高级自动化测试工程师", "salary": "25k-30k", "other": ["北京 海淀区 马连洼", "3-5年", "本科"]}
+{"companyName": "启迪云控", "position": "高级自动化测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 五道口", "3-5年", "本科"]}
+{"companyName": "京北方", "position": "自动化测试", "salary": "11k-17k·13薪", "other": ["北京 顺义区 马坡", "经验不限", "本科"]}
+{"companyName": "迅游网络科技", "position": "自动化测试工程师", "salary": "15k-20k·14薪", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "纵情向前", "position": "自动化测试", "salary": "15k-25k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "小米", "position": "高级自动化测试工程师", "salary": "25k-45k", "other": ["北京", "5-10年", "本科"]}
+{"companyName": "软通动力", "position": "LTE自动化测试", "salary": "8k-13k", "other": ["北京 海淀区 海淀北部新区", "1-3年", "本科"]}
+{"companyName": "屏芯科技", "position": "自动化测试工程师", "salary": "18k-35k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "大V店", "position": "高级自动化测试", "salary": "20k-32k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "方正电子", "position": "2019届研究生（自动化测试）", "salary": "8k-16k", "other": ["北京 海淀区 上地", "经验不限", "硕士"]}
+{"companyName": "福佑卡车", "position": "自动化测试工程师", "salary": "14k-24k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "必要商城", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 东大桥", "3-5年", "本科"]}
+{"companyName": "北京米优汇鑫信息...", "position": "自动化测试", "salary": "10k-15k", "other": ["北京 海淀区 清河", "1-3年", "大专"]}
+{"companyName": "狸米科技", "position": "自动化测试工程师", "salary": "20k-40k·14薪", "other": ["北京 朝阳区 北苑", "5-10年", "本科"]}
+{"companyName": "嘀嗒出行", "position": "自动化测试工程师", "salary": "11k-20k", "other": ["北京 朝阳区 望京", "1年以内", "本科"]}
+{"companyName": "浩鲸科技", "position": "自动化测试经理", "salary": "15k-25k", "other": ["北京 朝阳区 小营", "5-10年", "本科"]}
+{"companyName": "晟越博思", "position": "自动化测试", "salary": "10k-15k", "other": ["北京 朝阳区 大山子", "3-5年", "本科"]}
+{"companyName": "北京乐搏", "position": "自动化测试讲师", "salary": "15k-30k", "other": ["北京 石景山区 八宝山", "经验不限", "大专"]}
+{"companyName": "莱熙科技", "position": "自动化测试", "salary": "19k-30k", "other": ["北京 朝阳区 四惠", "3-5年", "大专"]}
+{"companyName": "科蓝软件", "position": "高级自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 朝外", "5-10年", "本科"]}
+{"companyName": "京东数字科技", "position": "自动化测试", "salary": "15k-30k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "艾拉丁", "position": "自动化测试工程师", "salary": "25k-40k", "other": ["北京 朝阳区 团结湖", "5-10年", "本科"]}
+{"companyName": "广联达", "position": "自动化测试工程师", "salary": "20k-40k", "other": ["北京 海淀区 上地", "5-10年", "本科"]}
+{"companyName": "中科金审", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京", "5-10年", "本科"]}
+{"companyName": "闪送科技", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "中国电信云", "position": "自动化测试开发工程师", "salary": "15k-20k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "udesk", "position": "自动化测试", "salary": "12k-24k", "other": ["北京 西城区 西直门", "3-5年", "本科"]}
+{"companyName": "好未来", "position": "自动化测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 知春路", "5-10年", "学历不限"]}
+{"companyName": "西安利百家商贸", "position": "自动化测试", "salary": "8k-9k", "other": ["北京 海淀区 万柳", "1-3年", "本科"]}
+{"companyName": "嘀嗒出行", "position": "自动化测试", "salary": "8k-15k", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "方正电子", "position": "自动化测试高级工程师", "salary": "11k-20k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "天融信", "position": "自动化测试架构师(J10404)", "salary": "15k-20k", "other": ["北京 海淀区 上地", "经验不限", "学历不限"]}
+{"companyName": "瞻世趣", "position": "自动化测试工程师", "salary": "8k-15k", "other": ["北京 丰台区 看丹桥", "1-3年", "大专"]}
+{"companyName": "牧辰科技", "position": "自动化测试", "salary": "12k-20k·13薪", "other": ["北京 西城区 积水潭", "3-5年", "本科"]}
+{"companyName": "文思海辉技术有限公司", "position": "自动化测试开发工程师", "salary": "12k-15k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "弘道智慧中医", "position": "自动化测试", "salary": "10k-20k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "行所志软件", "position": "自动化测试工程师", "salary": "6k-10k", "other": ["北京 朝阳区 十里河", "1-3年", "大专"]}
+{"companyName": "软通动力", "position": "软件测试/自动化测试/配置管理工程师", "salary": "8k-15k", "other": ["北京 海淀区 海淀北部新区", "经验不限", "本科"]}
+{"companyName": "中科软", "position": "中高级自动化测试工程师", "salary": "10k-15k", "other": ["北京 朝阳区 双井", "1-3年", "本科"]}
+{"companyName": "睿家科技", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 来广营", "3-5年", "本科"]}
+{"companyName": "微聚未来科技", "position": "自动化测试工程师（新浪金服）", "salary": "15k-20k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "甲骨文中国", "position": "自动化测试开发工程师", "salary": "250k-260k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "一点资讯", "position": "前端自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 望京", "经验不限", "本科"]}
+{"companyName": "Apus Group", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 望京", "经验不限", "本科"]}
+{"companyName": "中恒天", "position": "测试工程师（性能、自动化测试）", "salary": "15k-23k", "other": ["北京 海淀区 上地", "5-10年", "大专"]}
+{"companyName": "睿帆科技", "position": "高级自动化测试", "salary": "20k-30k", "other": ["北京 朝阳区 朝外", "3-5年", "本科"]}
+{"companyName": "极道科技", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 朝阳区 大屯", "1-3年", "本科"]}
+{"companyName": "蓝涟科技", "position": "自动化测试工程师", "salary": "7k-10k", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "日志易", "position": "自动化测试工程师（PB级大数据）-校招", "salary": "6k-11k", "other": ["北京 朝阳区 朝外", "应届生", "本科"]}
+{"companyName": "小爱智能科技", "position": "自动化测试开发工程师", "salary": "11k-16k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "京东数字科技", "position": "高级自动化测试工程师-web和服务端方向", "salary": "20k-40k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "好未来", "position": "高级测试工程师、自动化测试开发工程师", "salary": "20k-35k", "other": ["北京 海淀区 苏州街", "5-10年", "本科"]}
+{"companyName": "奥金拓", "position": "移动端自动化测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 五道口", "1-3年", "本科"]}
+{"companyName": "志翔科技", "position": "自动化测试", "salary": "15k-20k", "other": ["北京 海淀区 知春路", "5-10年", "本科"]}
+{"companyName": "华米科技", "position": "高级自动化测试工程师", "salary": "18k-30k·15薪", "other": ["北京 海淀区 上地", "5-10年", "本科"]}
+{"companyName": "Xsky", "position": "自动化测试实习生", "salary": "4k-5k", "other": ["北京 海淀区 远大路", "应届生", "本科"]}
+{"companyName": "阿里云", "position": "自动化测试", "salary": "20k-40k", "other": ["北京 朝阳区 望京", "经验不限", "本科"]}
+{"companyName": "威马", "position": "APM&性能、自动化测试工程师", "salary": "15k-30k", "other": ["北京 朝阳区 太阳宫", "3-5年", "本科"]}
+{"companyName": "音遇", "position": "高级服务端性能测试/自动化测试", "salary": "26k-50k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "高德地图", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "用友网络", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "有好东西", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 三元桥", "3-5年", "大专"]}
+{"companyName": "浩天桢伟", "position": "自动化测试-python-功能测试", "salary": "8k-12k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "高德地图", "position": "自动化测试", "salary": "20k-35k", "other": ["北京 朝阳区 大望路", "3-5年", "本科"]}
+{"companyName": "易企秀", "position": "测试工程师（自动化测试）", "salary": "18k-28k", "other": ["北京 海淀区 上地", "5-10年", "本科"]}
+{"companyName": "G7", "position": "自动化测试开发工程师", "salary": "15k-25k", "other": ["北京 海淀区 西三旗", "5-10年", "本科"]}
+{"companyName": "G7", "position": "自动化测试开发工程师", "salary": "15k-25k", "other": ["北京 海淀区 西三旗", "3-5年", "本科"]}
+{"companyName": "同程艺龙", "position": "高级自动化测试开发工程师", "salary": "20k-30k", "other": ["北京 朝阳区 酒仙桥", "5-10年", "本科"]}
+{"companyName": "恒昌", "position": "自动化测试工程师", "salary": "15k-20k", "other": ["北京 海淀区 马连洼", "3-5年", "本科"]}
+{"companyName": "阳光汇点", "position": "App自动化测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "鼎芯科技", "position": "自动化测试", "salary": "4k-9k", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "好未来", "position": "自动化测试架构师/测试开发", "salary": "35k-70k", "other": ["北京 海淀区 双榆树", "5-10年", "本科"]}
+{"companyName": "谷壳宝", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 朝阳区 双井", "1-3年", "本科"]}
+{"companyName": "赛格威机器人", "position": "高级自动化测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 清河", "3-5年", "本科"]}
+{"companyName": "赛格威机器人", "position": "高级自动化测试工程师", "salary": "20k-30k", "other": ["北京 海淀区 清河", "3-5年", "本科"]}
+{"companyName": "大锤资产", "position": "自动化测试工程师", "salary": "14k-18k", "other": ["北京 海淀区 苏州街", "3-5年", "大专"]}
+{"companyName": "金泰亚盛", "position": "自动化测试工程师", "salary": "8k-11k", "other": ["北京 顺义区 后沙峪", "1-3年", "大专"]}
+{"companyName": "寺库", "position": "自动化测试工程师——财务方向", "salary": "15k-30k", "other": ["北京 东城区 朝阳门", "3-5年", "本科"]}
+{"companyName": "北京恒昌利通", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 马连洼", "5-10年", "本科"]}
+{"companyName": "北京中计新业科技...", "position": "自动化测试", "salary": "4k-8k", "other": ["北京 朝阳区 立水桥", "1年以内", "大专"]}
+{"companyName": "VIPKID", "position": "自动化测试", "salary": "25k-35k", "other": ["北京 朝阳区 十里堡", "3-5年", "本科"]}
+{"companyName": "京东集团", "position": "APP自动化测试工程师", "salary": "12k-24k", "other": ["北京 大兴区 亦庄", "5-10年", "本科"]}
+{"companyName": "京东集团", "position": "WEB自动化测试", "salary": "15k-30k", "other": ["北京 大兴区 亦庄", "5-10年", "本科"]}
+{"companyName": "新网", "position": "自动化测试工程师", "salary": "14k-17k", "other": ["北京 大兴区 亦庄", "5-10年", "大专"]}
+{"companyName": "销售易", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 朝阳区 朝外", "3-5年", "本科"]}
+{"companyName": "CRMFactory", "position": "自动化测试工程师", "salary": "10k-15k", "other": ["北京 朝阳区 朝外", "3-5年", "本科"]}
+{"companyName": "正兴启能", "position": "自动化测试", "salary": "5k-8k", "other": ["北京 朝阳区 甜水园", "1-3年", "本科"]}
+{"companyName": "创世智链", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 西城区 广外大街", "1-3年", "本科"]}
+{"companyName": "神州信息", "position": "自动化测试", "salary": "7k-10k", "other": ["北京 西城区 月坛", "1-3年", "大专"]}
+{"companyName": "牛电科技", "position": "自动化测试工程师", "salary": "10k-15k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "京东集团", "position": "web自动化测试工程师", "salary": "15k-30k", "other": ["北京", "5-10年", "本科"]}
+{"companyName": "工银瑞信", "position": "自动化测试工程师", "salary": "20k-40k", "other": ["北京 西城区 金融街", "5-10年", "本科"]}
+{"companyName": "汇生活网络科技", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 大兴区 亦庄", "3-5年", "本科"]}
+{"companyName": "数衍科技", "position": "高级自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "广联达", "position": "高级自动化测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 上地", "5-10年", "本科"]}
+{"companyName": "优贝在线", "position": "自动化测试工程师", "salary": "15k-30k", "other": ["北京 朝阳区 北苑", "1-3年", "本科"]}
+{"companyName": "优贝在线", "position": "iOS自动化测试工程师", "salary": "15k-30k", "other": ["北京 朝阳区 北苑", "1-3年", "本科"]}
+{"companyName": "纳恩博", "position": "自动化测试工程师", "salary": "16k-22k", "other": ["北京 海淀区 清河", "3-5年", "本科"]}
+{"companyName": "京东集团", "position": "自动化测试", "salary": "15k-30k", "other": ["北京", "5-10年", "本科"]}
+{"companyName": "中国电信云", "position": "云平台自动化测试工程师", "salary": "12k-24k", "other": ["北京 海淀区 上地", "经验不限", "本科"]}
+{"companyName": "旷视科技", "position": "自动化测试", "salary": "15k-25k", "other": ["北京 海淀区 中关村", "1-3年", "本科"]}
+{"companyName": "egenie", "position": "自动化测试", "salary": "10k-20k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "启迪云控", "position": "高级自动化测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 五道口", "5-10年", "本科"]}
+{"companyName": "启迪云控", "position": "车端高级自动化测试工程师", "salary": "15k-28k", "other": ["北京 海淀区 五道口", "3-5年", "本科"]}
+{"companyName": "树根互联", "position": "E2E自动化测试", "salary": "15k-20k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "东华博雅", "position": "自动化测试", "salary": "10k-15k", "other": ["北京 东城区 东单", "3-5年", "大专"]}
+{"companyName": "易建科技", "position": "自动化测试", "salary": "10k-16k", "other": ["北京 东城区 和平里", "3-5年", "本科"]}
+{"companyName": "民航东北凯亚", "position": "自动化测试开发工程师", "salary": "10k-15k", "other": ["北京 顺义区 后沙峪", "5-10年", "本科"]}
+{"companyName": "小赢科技", "position": "自动化测试", "salary": "14k-26k", "other": ["北京 海淀区 中关村", "5-10年", "本科"]}
+{"companyName": "数衍科技", "position": "高级自动化测试工程师", "salary": "15k-30k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "数衍科技", "position": "自动化测试", "salary": "1k-2k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "小米", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 海淀区 清河", "3-5年", "本科"]}
+{"companyName": "数衍科技", "position": "自动化测试工程师", "salary": "12k-20k", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "国网互联", "position": "自动化测试", "salary": "25k-35k", "other": ["北京 朝阳区 望京", "5-10年", "大专"]}
+{"companyName": "快如科技", "position": "IOS自动化测试", "salary": "12k-24k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "龙腾育才", "position": "Python自动化测试讲师", "salary": "10k-15k", "other": ["北京 朝阳区 立水桥", "3-5年", "本科"]}
+{"companyName": "北京东方融创", "position": "自动化测试", "salary": "10k-15k", "other": ["北京 朝阳区 燕莎", "1-3年", "本科"]}
+{"companyName": "阿博茨科技", "position": "高级自动化测试开发", "salary": "15k-30k", "other": ["北京 海淀区 学院路", "3-5年", "本科"]}
+{"companyName": "乐视网", "position": "接口自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 朝阳公园", "1-3年", "本科"]}
+{"companyName": "美业邦", "position": "测试经理（自动化测试）", "salary": "18k-35k", "other": ["北京", "5-10年", "大专"]}
+{"companyName": "美业邦", "position": "自动化测试经理", "salary": "20k-30k", "other": ["北京", "5-10年", "大专"]}
+{"companyName": "用友网络", "position": "高级自动化测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "恒天财富", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 朝阳区 三里屯", "3-5年", "本科"]}
+{"companyName": "同程艺龙", "position": "自动化测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 酒仙桥", "3-5年", "本科"]}
+{"companyName": "联创世界", "position": "自动化测试工程师", "salary": "11k-20k", "other": ["北京 海淀区 四季青", "3-5年", "本科"]}
+{"companyName": "香格里拉酒店集团", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "香格里拉酒店集团", "position": "自动化测试工程师", "salary": "20k-30k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "爱思特信息技术", "position": "Android开发测试工程师（自动化测试）", "salary": "14k-20k", "other": ["北京 东城区 安贞", "3-5年", "本科"]}
+{"companyName": "亚信科技", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 四季青", "3-5年", "本科"]}
+{"companyName": "北京跃盟科技有限公司", "position": "自动化测试开发工程师", "salary": "15k-30k", "other": ["北京 朝阳区 三元桥", "经验不限", "本科"]}
+{"companyName": "天悦互动科技", "position": "APP自动化测试", "salary": "10k-18k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "好未来", "position": "SEG智慧教育（北京）- 自动化测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "爱接力科技", "position": "自动化测试工程师", "salary": "13k-25k", "other": ["北京 朝阳区 大望路", "3-5年", "本科"]}
+{"companyName": "亚信科技", "position": "自动化测试", "salary": "15k-25k", "other": ["北京 朝阳区 燕莎", "3-5年", "本科"]}
+{"companyName": "北京名道恒通", "position": "自动化测试", "salary": "10k-15k", "other": ["北京 朝阳区 朝外", "3-5年", "大专"]}
+{"companyName": "神州数码", "position": "自动化测试-生命科学园", "salary": "8k-12k", "other": ["北京 昌平区 沙河", "3-5年", "本科"]}
+{"companyName": "神州数码", "position": "自动化测试-用友产业园", "salary": "8k-12k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "网联", "position": "自动化测试工程师", "salary": "20k-40k", "other": ["北京 西城区 月坛", "1-3年", "学历不限"]}
+{"companyName": "华夏启程", "position": "自动化测试", "salary": "20k-40k", "other": ["北京", "5-10年", "大专"]}
+{"companyName": "爱立信", "position": "自动化测试", "salary": "17k-30k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "Face++", "position": "接口自动化测试工程师", "salary": "25k-50k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "浪潮信息", "position": "ATE 自动化测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 上地", "经验不限", "本科"]}
+{"companyName": "汽车之家", "position": "自动化测试", "salary": "2k-4k", "other": ["北京 海淀区 中关村", "经验不限", "本科"]}
+{"companyName": "魔门塔科技", "position": "无人驾驶自动化测试开发工程师", "salary": "20k-30k", "other": ["北京 海淀区 五道口", "经验不限", "本科"]}
+{"companyName": "京东数字科技", "position": "测试工程师、自动化测试工程师", "salary": "12k-24k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "用友网络", "position": "自动化测试平台开发工程师", "salary": "15k-20k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "旷视科技", "position": "自动化测试工程师", "salary": "10k-15k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "万门教育", "position": "自动化测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 万柳", "3-5年", "本科"]}
+{"companyName": "同程艺龙", "position": "自动化测试", "salary": "15k-25k", "other": ["北京 朝阳区 酒仙桥", "3-5年", "本科"]}
+{"companyName": "京东集团", "position": "自动化测试工具架构师", "salary": "15k-30k", "other": ["北京 朝阳区 小营", "3-5年", "本科"]}
+{"companyName": "中汇饰家", "position": "自动化测试", "salary": "10k-17k", "other": ["北京 海淀区 五棵松", "3-5年", "学历不限"]}
+{"companyName": "京东集团", "position": "软件自动化测试工程师", "salary": "17k-20k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "中汇饰家", "position": "自动化测试", "salary": "15k-20k", "other": ["北京 海淀区 五棵松", "3-5年", "本科"]}
+{"companyName": "91金融", "position": "自动化测试", "salary": "8k-15k", "other": ["北京 西城区 马甸", "1年以内", "本科"]}
+{"companyName": "益众餐饮", "position": "自动化测试", "salary": "13k-20k", "other": ["北京 朝阳区 立水桥", "3-5年", "本科"]}
+{"companyName": "北京尚德机构", "position": "自动化测试工程师", "salary": "10k-15k", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "北京尚德机构", "position": "自动化测试工程师（J2115）", "salary": "10k-15k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "百度", "position": "自动化测试", "salary": "15k-30k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "好未来", "position": "自动化测试开发工程师", "salary": "14k-26k", "other": ["北京 海淀区 万柳", "3-5年", "本科"]}
+{"companyName": "外研在线", "position": "自动化测试", "salary": "15k-20k", "other": ["北京 海淀区 苏州桥", "5-10年", "本科"]}
+{"companyName": "中国移动设计院", "position": "性能与自动化测试工程师", "salary": "8k-10k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "神州数码", "position": "自动化测试", "salary": "9k-13k", "other": ["北京 海淀区 西二旗", "3-5年", "本科"]}
+{"companyName": "客栈通", "position": "测试工程师、测试开发工程师、自动化测试", "salary": "13k-20k", "other": ["北京 海淀区 牡丹园", "1-3年", "本科"]}
+{"companyName": "ADVENT", "position": "高级软件自动化测试工程师", "salary": "16k-19k", "other": ["北京 东城区 东直门", "5-10年", "本科"]}
+{"companyName": "ADVENT", "position": "软件自动化测试工程师", "salary": "14k-18k", "other": ["北京 东城区 东直门", "5-10年", "本科"]}
+{"companyName": "慧与软件(济宁)", "position": "ios自动化测试平台高级开发工程师", "salary": "25k-40k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "北京算云", "position": "自动化测试", "salary": "15k-25k", "other": ["北京", "5-10年", "本科"]}
+{"companyName": "慧与软件(济宁)", "position": "安卓自动化测试平台高级开发工程师", "salary": "25k-40k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "恒润科技", "position": "测试工程师", "salary": "8k-13k", "other": ["北京 海淀区 知春路", "经验不限", "本科"]}
+{"companyName": "纵目科技", "position": "测试开发架构师", "salary": "20k-30k", "other": ["北京 昌平区 回龙观", "5-10年", "本科"]}
+{"companyName": "纵目科技", "position": "测试开发工程师", "salary": "15k-25k", "other": ["北京 昌平区 回龙观", "5-10年", "本科"]}
+{"companyName": "龙猫数据", "position": "测试工程师", "salary": "10k-15k", "other": ["北京 海淀区 知春路", "1-3年", "本科"]}
+{"companyName": "普众科技", "position": "测试", "salary": "15k-20k", "other": ["北京 朝阳区 来广营", "3-5年", "大专"]}
+{"companyName": "更美app", "position": "高级测试工程师", "salary": "15k-30k·15薪", "other": ["北京 朝阳区 望京", "3-5年", "大专"]}
+{"companyName": "联想利泰", "position": "测试工程师", "salary": "13k-17k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "软通动力", "position": "软件测试", "salary": "7k-12k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "北京纬创", "position": "云平台测试工程师", "salary": "15k-25k", "other": ["北京 朝阳区 望京", "1-3年", "大专"]}
+{"companyName": "文德数慧", "position": "测试工程师", "salary": "9k-14k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "博彦科技", "position": "测试", "salary": "8k-13k", "other": ["北京 海淀区 万柳", "1-3年", "本科"]}
+{"companyName": "百卓网络", "position": "测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 海淀北部新区", "1-3年", "本科"]}
+{"companyName": "神州信息", "position": "功能测试北京银行", "salary": "9k-12k", "other": ["北京 东城区 安定门", "3-5年", "本科"]}
+{"companyName": "神州信息", "position": "测试光大", "salary": "8k-13k", "other": ["北京 西城区 菜市口", "3-5年", "本科"]}
+{"companyName": "天阳科技", "position": "性能测试工程师", "salary": "10k-18k", "other": ["北京 东城区 北京站", "3-5年", "本科"]}
+{"companyName": "北京市城果科技有...", "position": "中级测试工程师", "salary": "11k-18k", "other": ["北京 朝阳区 呼家楼", "1-3年", "大专"]}
+{"companyName": "方正电子", "position": "2018届实习生", "salary": "3k-6k", "other": ["北京 海淀区 上地", "经验不限", "硕士"]}
+{"companyName": "大V店", "position": "测试实习生", "salary": "4k-5k", "other": ["北京 朝阳区 望京", "经验不限", "本科"]}
+{"companyName": "计算机技术以及应用所", "position": "测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 五棵松", "1-3年", "本科"]}
+{"companyName": "芯洲科技", "position": "芯片测试工程师", "salary": "10k-15k", "other": ["北京 朝阳区 望京", "1-3年", "本科"]}
+{"companyName": "北京必思拓科技", "position": "注册计量师", "salary": "15k-20k", "other": ["北京 平谷区", "1年以内", "大专"]}
+{"companyName": "云尚互联科技", "position": "功能测试", "salary": "13k-20k", "other": ["北京 东城区 朝阳门", "1-3年", "本科"]}
+{"companyName": "方正电子", "position": "Java实习生", "salary": "3k-6k", "other": ["北京 海淀区 上地", "经验不限", "硕士"]}
+{"companyName": "奇虎360", "position": "测试开发", "salary": "15k-30k", "other": ["北京 朝阳区 大山子", "3-5年", "本科"]}
+{"companyName": "纵目科技", "position": "C++", "salary": "15k-25k", "other": ["北京 昌平区 回龙观", "5-10年", "本科"]}
+{"companyName": "屏芯科技", "position": "软件测试工程师", "salary": "18k-35k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "元拓科技", "position": "java开发", "salary": "8k-15k", "other": ["北京 海淀区 中关村", "1-3年", "本科"]}
+{"companyName": "木百里", "position": "高级测试开发工程师", "salary": "25k-50k", "other": ["北京 西城区 德胜门", "5-10年", "本科"]}
+{"companyName": "苏州步长", "position": "芯片测试工程师", "salary": "7k-12k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "东信北邮", "position": "Python研发工程师", "salary": "5k-10k", "other": ["北京 海淀区 知春路", "经验不限", "本科"]}
+{"companyName": "京东科技", "position": "测试开发工程师", "salary": "20k-40k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "浪潮集团", "position": "测试开发", "salary": "4k-6k", "other": ["北京", "1年以内", "本科"]}
+{"companyName": "纵情向前", "position": "测试工程师", "salary": "10k-20k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "蚂蚁金服", "position": "蚂蚁金服-OceanBase数据库-质量专家", "salary": "30k-60k", "other": ["北京 海淀区 中关村", "经验不限", "学历不限"]}
+{"companyName": "浪潮集团", "position": "初级软件测试工程师", "salary": "4k-5k", "other": ["北京", "应届生", "本科"]}
+{"companyName": "中国金融认证中心", "position": "测试开发", "salary": "15k-30k", "other": ["北京 西城区 陶然亭", "5-10年", "本科"]}
+{"companyName": "百度", "position": "区块链测试开发", "salary": "20k-40k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "北京理正", "position": "测试经理/测试主管", "salary": "10k-15k", "other": ["北京 西城区 阜成门", "3-5年", "本科"]}
+{"companyName": "VIPKID", "position": "VIPKID 招聘 服务端测试工程师 (高级)", "salary": "15k-25k", "other": ["北京 朝阳区 十里堡", "经验不限", "本科"]}
+{"companyName": "百度", "position": "百度-测试开发工程师( 客户端 安卓/iOS）", "salary": "15k-30k", "other": ["北京 海淀区 马连洼", "1-3年", "本科"]}
+{"companyName": "新北洋", "position": "测试开发", "salary": "15k-25k", "other": ["北京 海淀区 知春路", "5-10年", "本科"]}
+{"companyName": "北京永兴感知", "position": "应用软件工程师", "salary": "10k-20k", "other": ["北京 房山区 良乡", "3-5年", "本科"]}
+{"companyName": "腾讯", "position": "腾讯社交广告测试开发工程师", "salary": "25k-50k", "other": ["北京 海淀区 中关村", "5-10年", "本科"]}
+{"companyName": "腾讯", "position": "测试开发工程师", "salary": "20k-40k", "other": ["北京 海淀区 知春路", "3-5年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "20k-40k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "软通动力集团", "position": "测试工程师", "salary": "8k-11k", "other": ["北京 海淀区 万柳", "1-3年", "本科"]}
+{"companyName": "第四范式", "position": "AI工程技术测试开发专家", "salary": "20k-40k", "other": ["北京 海淀区 上地", "5-10年", "本科"]}
+{"companyName": "百度", "position": "Android/ios高级开发测试工程师", "salary": "18k-30k", "other": ["北京 海淀区 西北旺", "3-5年", "本科"]}
+{"companyName": "第四范式", "position": "测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "20k-40k", "other": ["北京 海淀区 马连洼", "经验不限", "本科"]}
+{"companyName": "百度", "position": "高级测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 西北旺", "经验不限", "本科"]}
+{"companyName": "第四范式", "position": "中级/高级测试开发工程师", "salary": "20k-40k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "小米", "position": "服务端测试开发工程师", "salary": "25k-45k", "other": ["北京 海淀区 西二旗", "3-5年", "本科"]}
+{"companyName": "百度", "position": "服务端测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "百度", "position": "百度-测试开发工程师(服务端）", "salary": "15k-30k", "other": ["北京 海淀区 万柳", "1-3年", "本科"]}
+{"companyName": "百度", "position": "服务端测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 上地", "3-5年", "本科"]}
+{"companyName": "百度", "position": "客户端测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "百度", "position": "测试开发实习生", "salary": "1k-2k", "other": ["北京 海淀区 马连洼", "经验不限", "本科"]}
+{"companyName": "有利网", "position": "测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "腾讯", "position": "PCG04-测试开发工程师（北京）", "salary": "20k-40k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "北京百度网讯有限公司", "position": "移动端测试", "salary": "15k-25k", "other": ["北京 海淀区 马连洼", "1-3年", "本科"]}
+{"companyName": "百度", "position": "百度网盘客户端测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "13k-25k", "other": ["北京 海淀区 西二旗", "1-3年", "本科"]}
+{"companyName": "百度", "position": "移动端测试", "salary": "20k-40k", "other": ["北京 海淀区 西二旗", "1-3年", "本科"]}
+{"companyName": "百度", "position": "测试开发", "salary": "20k-40k", "other": ["北京 海淀区 西二旗", "1-3年", "本科"]}
+{"companyName": "北京百度网讯有限公司", "position": "高级测试开发工程师", "salary": "20k-40k", "other": ["北京 海淀区 上地", "1年以内", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "12k-24k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "康糖医疗", "position": "软件工程师", "salary": "15k-20k", "other": ["北京 朝阳区 望京", "经验不限", "学历不限"]}
+{"companyName": "逸驾智能", "position": "高级性能测试工程师", "salary": "15k-16k", "other": ["北京", "5-10年", "本科"]}
+{"companyName": "北京雷石", "position": "测试经理", "salary": "20k-40k", "other": ["北京 朝阳区 北苑", "5-10年", "本科"]}
+{"companyName": "小米", "position": "测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 清河", "经验不限", "本科"]}
+{"companyName": "百度", "position": "测试开发", "salary": "15k-30k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "百度", "position": "测试开发", "salary": "18k-35k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "百度", "position": "测试开发", "salary": "15k-25k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "百度", "position": "百度高级/资深测试开发工程师", "salary": "18k-35k·14薪", "other": ["北京 海淀区 马连洼", "1-3年", "本科"]}
+{"companyName": "爱奇艺", "position": "测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 中关村", "5-10年", "本科"]}
+{"companyName": "爱奇艺", "position": "测试开发", "salary": "18k-35k·14薪", "other": ["北京 海淀区 中关村", "5-10年", "本科"]}
+{"companyName": "爱奇艺", "position": "测试工程师", "salary": "20k-35k", "other": ["北京 海淀区 中关村", "3-5年", "本科"]}
+{"companyName": "文思海辉", "position": "测试工程师", "salary": "7k-8k", "other": ["北京 海淀区 西二旗", "1-3年", "本科"]}
+{"companyName": "阿里巴巴集团", "position": "高级测试开发工程师", "salary": "20k-40k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "京东集团", "position": "测试开发工程师", "salary": "15k-30k", "other": ["北京", "经验不限", "本科"]}
+{"companyName": "新北洋", "position": "测试工程师", "salary": "15k-25k", "other": ["北京 海淀区 知春路", "5-10年", "本科"]}
+{"companyName": "百度", "position": "分布式计算开发测试工程师", "salary": "20k-40k", "other": ["北京 海淀区 马连洼", "经验不限", "本科"]}
+{"companyName": "永安信通", "position": "测试工程师", "salary": "10k-15k", "other": ["北京 海淀区 魏公村", "3-5年", "本科"]}
+{"companyName": "联创世界", "position": "高级/资深测试开发工程师", "salary": "10k-15k", "other": ["北京 朝阳区 大望路", "3-5年", "本科"]}
+{"companyName": "印象笔记", "position": "高级测试工程师", "salary": "15k-28k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "熊猫星厨", "position": "测试主管", "salary": "12k-24k", "other": ["北京 朝阳区 酒仙桥", "3-5年", "本科"]}
+{"companyName": "百度", "position": "测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 西北旺", "1-3年", "本科"]}
+{"companyName": "威动科技", "position": "测试经理", "salary": "20k-35k", "other": ["北京 朝阳区 望京", "5-10年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "25k-50k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "百度", "position": "百度_测试开发工程师(研发方向)", "salary": "15k-30k", "other": ["北京 海淀区 马连洼", "1-3年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师(研发方向）", "salary": "15k-30k", "other": ["北京 海淀区 上地", "1-3年", "本科"]}
+{"companyName": "小米", "position": "测试工程师", "salary": "15k-30k", "other": ["北京 海淀区 清河", "1-3年", "本科"]}
+{"companyName": "百度", "position": "AI语音技术测试开发实习生", "salary": "4k-5k", "other": ["北京 海淀区 马连洼", "应届生", "本科"]}
+{"companyName": "搜狗", "position": "测试开发工程师", "salary": "15k-30k", "other": ["北京 海淀区 五道口", "1-3年", "本科"]}
+{"companyName": "北京百度网讯有限公司", "position": "软件测试工程师", "salary": "20k-30k", "other": ["北京 海淀区 上地", "经验不限", "本科"]}
+{"companyName": "高德地图", "position": "测试开发", "salary": "20k-30k", "other": ["北京 朝阳区 大望路", "3-5年", "本科"]}
+{"companyName": "京东数字科技", "position": "测试工程师", "salary": "12k-20k", "other": ["北京", "3-5年", "本科"]}
+{"companyName": "百度", "position": "测试开发工程师", "salary": "10k-20k", "other": ["北京 海淀区 西北旺", "应届生", "硕士"]}
+{"companyName": "阿里巴巴集团", "position": "测试开发", "salary": "20k-40k", "other": ["北京 朝阳区 望京", "3-5年", "本科"]}
+{"companyName": "百度", "position": "测试工程师", "salary": "10k-20k", "other": ["北京 海淀区 西北旺", "1年以内", "硕士"]}
+{"companyName": "淡蓝网Blued", "position": "APP测试专家", "salary": "25k-35k", "other": ["北京 朝阳区 双井", "5-10年", "本科"]}
+{"companyName": "北京好象科技", "position": "移动端测试", "salary": "5k-10k", "other": ["北京 海淀区 上地", "1年以内", "本科"]}
+{"companyName": "蚂蚁金服", "position": "测试开发专家", "salary": "25k-50k", "other": ["北京 朝阳区 呼家楼", "3-5年", "本科"]}
