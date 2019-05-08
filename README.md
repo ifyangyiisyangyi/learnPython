@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://img.soogif.com/mb4M0v0GNa0qD3fX8hTjJoZJ26y60IEE.gif"/><br><br>
+  <img src="http://img.soogif.com/ChyENLCrXxZVZgi43EDS7tHBnAZvQM5S.gif_s400x0"/><br><br>
   <br> <strong>每天进步一点点</strong>
 </p>
 
