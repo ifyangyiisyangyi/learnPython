@@ -5,28 +5,34 @@ import requests
 import re
 from bs4 import BeautifulSoup
 import json
+import urllib3
+from time import sleep
+import random
 
 def get_html(url):
 
     headers = {
         'referer' : 'https://www.zhipin.com/job_detail/?query=&city=101010100&industry=&position=',
-        'user-agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        # 'user-agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36'
+        'user-agent' : 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36'
     }
-    # params = {
-    #     'query' : '自动化测试',
-    #     'city' : '101010100'
-    # }
+    params = {
+        'query' : '测试',
+        'city' : '101010100'
+    }
     try:
-        r = requests.request('get', url = url,  headers = headers)
+        
+        r = requests.request('get', params = params, url = url,  headers = headers, verify = False)
     except:
-        print("请求出错啦")
-        return 
+        print("请求结束")
+        return "error"
     else:
         html = r.content
-        
         return html
 
 def get_con(html):
+    if html == "error":
+        return 'error'
     soup = BeautifulSoup(html, 'html.parser')
     job_list = soup.find('div', attrs = {'class' : 'job-list'}) # 找到岗位信息
     page = soup.find('div', attrs = {'class' : 'page'}) # 找到页码信息
@@ -56,25 +62,17 @@ def get_con(html):
         return None
 
 
-class PositionInfo(object):
-    def __init__(self, compamyName, position, salary, city):
-        self.compamyName = compamyName
-        self.position = position
-        self.salary = salary
-        self.city = city
-
-    def showInfo(self):
-        print(self.compamyName)
-        print(self.position)
-        print(self.salary)
-        print(self.city)
-        print('************************************************')
-
 def main():
-    url = 'https://www.zhipin.com/job_detail/?query=%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95&city=101010100&industry=&position='
+    urllib3.disable_warnings() # 消除警告
+    url = 'https://www.zhipin.com/job_detail/'
     while url:
+        sleep(random.randint(1,3))     # 随机间隔1到3秒请求一次
+        print(url)
         html = get_html(url)
         query = get_con(html)
+        print(query)
+        if query == 'error':
+            return
         url = 'https://www.zhipin.com' + query
 if __name__ == "__main__":
     main()
