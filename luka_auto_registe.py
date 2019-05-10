@@ -1,5 +1,4 @@
 
-
 import requests
 import json
 import pymysql
@@ -31,7 +30,7 @@ def send_captcha(url):
     }
     result = requests.post(url=urll, headers=headers, data=json.dumps(data))
     # print(result.status_code)
-    print(result.text)
+    # print(result.text)
     return
 
 def get_captcha():
@@ -42,12 +41,12 @@ def get_captcha():
     # data = cursor.fetchone()
     # print ("Database version : %s " % data)
     sql_str = "手机号" + name + "的验证码%"
-    sql = "select description from activity_log where description like" + "'" + sql_str + "'"
+    sql = "select description from activity_log where description like" + "'" + sql_str + "'" + "order by created_at desc limit 1"
     # print(sql)
     # sql = "select description from activity_log where description like '手机号18101287746的验证码%'"
     cursor.execute(sql)
     captcha_result = cursor.fetchone()
-    # print(type(captcha_result))
+    # print(captcha_result, type(captcha_result))
     if type(captcha_result) == tuple:
         captcha_result = captcha_result[0]
         captcha = re.findall("\d\d\d\d", captcha_result)[2]
@@ -84,6 +83,6 @@ def app_register():
 
 if __name__ == "__main__":
     send_captcha(url)
-    print("等待20s...")
-    sleep(20)
+    print("等待10s...")
+    sleep(10)
     app_register()
