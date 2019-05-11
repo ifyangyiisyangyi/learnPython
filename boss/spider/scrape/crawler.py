@@ -1,4 +1,5 @@
-# -*- coding:utf-8 -*-
+
+
 from urllib.parse import urlencode
 from bs4 import BeautifulSoup
 import requests
@@ -7,6 +8,7 @@ from spider.viewmodels.job import Job
 from spider.models.excel import save_as_xlsx
 from spider.models.mysql import save_into_database
 import json
+import codecs
 
 
 def prepare_request(args):
@@ -42,8 +44,8 @@ def fetch(pages, cookie):
     # print(len(front_lis))
     # data = get_data(front_lis, cookie)
     for page in range(1, pages):
-        print(page)
-        print('执行')
+        print('抓取第 ', page, '页')
+        # print('执行')
         html = fetch_follow_pages(page, cookie)    # 把当前页的html抓到
         lis = create_dom(html, False)  # 把当前页面的30个岗位解析出来,返回soup对象的列表
         data += get_data(lis, cookie) # 解析页面，将岗位具体信息写成字典，保存在一个列表中
@@ -93,7 +95,7 @@ def fetch_follow_pages(page, cookie):
     query = {
         'city': 101010100,
         'page': page,
-        'query': '测试'
+        'query': '测试开发'
     }
     front_page = False
     referer = 'https://www.zhipin.com/job_detail/?city=101010100&source=10&query=%E6%8A%80%E6%9C%AF'
@@ -126,7 +128,6 @@ def create_dom(markup, front_page):
         print("找到所有job-list")
     else:
         lis = soup.find_all('li', class_='item')
-    print(len(lis))
     return lis   #返回ResultSet对象，也是一个列表？
 
 
@@ -152,6 +153,10 @@ def get_data(lis, cookie):
         for index, value in enumerate(ems):
             info[keys[index]] = value.string
         info['category'] = '技术'
+        job_info = json.dumps(info, ensure_ascii= False)   # 把info转为字符串
+        print(job_info)
+        with codecs.open('job_info.txt', 'a+', encoding = 'utf-8') as f:
+            f.write(job_info + '\n')
         infos.append(info)
     return infos  # 返回列表，里面有30个岗位的信息
 
