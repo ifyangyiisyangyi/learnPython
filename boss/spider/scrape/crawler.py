@@ -49,7 +49,7 @@ def fetch(pages, cookie):
         html = fetch_follow_pages(page, cookie)    # 把当前页的html抓到
         lis = create_dom(html, False)  # 把当前页面的30个岗位解析出来,返回soup对象的列表
         data += get_data(lis, cookie) # 解析页面，将岗位具体信息写成字典，保存在一个列表中
-    jobs = create_job_model(data)
+    jobs = create_job_model(data) # 构造job对象，保存在列表中
     # print('开始保存入数据库...')
     # save_into_database(jobs)
     # print('成功保存到数据库中')
@@ -164,7 +164,6 @@ def get_data(lis, cookie):
 def fetch_detail(url, query, cookie):
     query_string = 'ka='+query['ka'] + '&' + 'lid='+query['lid']
     url = 'https://www.zhipin.com' + url + '?' + query_string
-    # print(url)
     detail_info = {}
     args = {
         'query_string': query,
@@ -192,9 +191,9 @@ def fetch_detail(url, query, cookie):
 
 
 def create_job_model(infos):
-    print(infos)
+    print('data为:*****************', infos)
     data = []
     for info in infos:
-        print(info)
+        # print(info)
         data.append(Job(info))
     return data
