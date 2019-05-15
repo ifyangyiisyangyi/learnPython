@@ -1,10 +1,10 @@
-
-import pytest
 import requests
 import json
-import read_yaml
 
 # 获取token
+from conf import read_yaml
+
+
 def get_robot_token(udid):
     urll = read_yaml.test_data["url"] + "/robot-login"
     headers = {
