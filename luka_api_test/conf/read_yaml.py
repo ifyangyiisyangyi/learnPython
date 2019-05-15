@@ -10,7 +10,7 @@ import os
 # def yy():
 
 filePath = os.path.dirname(os.path.realpath(__file__)) # 返回.py文件的绝对路径
-yamlPath = os.path.join(filePath, "yy_data.yaml")  # 路径拼接，返回配置文件的绝对路径
+yamlPath = os.path.join(filePath, "yy_data.yml")  # 路径拼接，返回配置文件的绝对路径
 f = open(yamlPath, 'r', encoding = 'utf-8') 
 result = f.read()
 test_data = yaml.load(result)
