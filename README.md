@@ -10,7 +10,7 @@
 
 [2. luka注册账号脚本](https://github.com/ifyangyiisyangyi/learnPython/blob/master/luka_auto_registe.py)
 
-[3. pytest框架学习](https://github.com/ifyangyiisyangyi/learnPython/tree/master/learnPytest)
+[3. pytest框架学习](https://github.com/ifyangyiisyangyi/learnPython/tree/master/luka_api_test)
 
 [4. boss直聘爬取岗位信息](https://github.com/ifyangyiisyangyi/learnPython/blob/master/boss_spider.py)
 
