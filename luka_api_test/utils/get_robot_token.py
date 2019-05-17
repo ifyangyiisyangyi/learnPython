@@ -25,6 +25,5 @@ def get_robot_token(udid):
         }
     }
     result = requests.put(url=urll, headers=headers, data=json.dumps(data))
-    # result = json.loads(result.text)
     token = result.json()["data"]["token"]
     return token

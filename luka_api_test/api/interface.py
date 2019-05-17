@@ -2,20 +2,10 @@
 接口文件
 """
 
-import requests
-import json
-
-from api.config import token
-from conf import read_env
+from utils.request_maker import get_request_maker
 
 
-def robot_login(udid):
-    url = read_env.test_data["url"] + "/robot-login"
-    headers = {
-        "Accept": "application/vnd.luka." + read_env.test_data["api_version"] + "+json",
-        "Content-Type": "application/json",
-        "Accept-Language": read_env.test_data["lang"]
-    }
+def robot_login(udid): # robot登录
     data = {
         "data": {
             "type": "robot-login",
@@ -24,39 +14,37 @@ def robot_login(udid):
             }
         }
     }
-    result = requests.put(url=url, headers=headers, data=json.dumps(data))
-    result = json.loads(result.text)
-    return result
+    return get_request_maker('put', '/robot-login', data)
+
+
+def cv_model_cover():
+    return get_request_maker('get', '/cv/model/cover')
+
+
+def cv_model_finger():
+    return get_request_maker('get', '/cv/model/finger')
 
 
 def cv_model_book(book_id):
-    url = read_env.test_data["url"] + "/cv/model/book/" + book_id
-    headers = {
-        "Authorization": "Bearer" + token,
-        "Accept": "application/vnd.luka.v1.14+json"
-    }
-    data = {
-
-    }
-    result = requests.get(url=url, headers=headers, data=json.dumps(data))
-    result = json.loads(result.text)
-    result = result["errmsg"]
-    return result
+    url = "/cv/model/book/" + book_id
+    return get_request_maker('get', url)
 
 
 def robots_me():
-    url = read_env.test_data["url"] + "/robots-me"
-    headers = {
-        "Authorization": "Bearer" + token,
-        "Accept": "application/vnd.luka.v1.14+json"
-    }
-    data = {
+    return get_request_maker('get', '/robots-me')
 
+
+def robot_richscan(book_id):
+    data = {
+        "data": {
+            "type": "bookshelf",
+            "attributes": {
+                "alg_book_id": book_id
+            }
+        }
     }
-    result = requests.get(url=url, headers=headers, data=json.dumps(data))
-    result = json.loads(result.text)
-    return result
+    return get_request_maker('post', '/robot-richscan', data)
 
 
 if __name__ == '__main__':
-    pass
+    print(robot_richscan())
