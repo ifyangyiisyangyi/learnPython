@@ -42,6 +42,16 @@ def get_request_maker(request_type, url_suffix, data=None):
         }
         result = requests.post(url=url, headers=headers, data=json.dumps(data))
         return result.json()
+    elif request_type == 'delete':
+        url = "{}".format(read_env.test_data["url"]) + url_suffix
+        headers = {
+            "Authorization": "Bearer" + token,
+            "Accept": "application/vnd.luka.{}+json".format(read_env.test_data["api_version"]),
+            "Content-Type": "application/json",
+            "Accept-Language": read_env.test_data["lang"]
+        }
+        result = requests.delete(url=url, headers=headers, data=json.dumps(data))
+        return result.json()
     else:
         return
 
