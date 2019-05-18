@@ -397,8 +397,8 @@ function filter_table(elem) {
     not_found_message.hidden = !all_rows_hidden;
 }
 </script>
-    <h1>report.html</h1>
-    <p>Report generated on 18-May-2019 at 16:14:31 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
+    <h1>20190517225518.html</h1>
+    <p>Report generated on 17-May-2019 at 22:55:20 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v1.20.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -417,8 +417,8 @@ function filter_table(elem) {
         <td>Python</td>
         <td>3.7.0</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 0.46 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>7 tests ran in 1.62 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">7 passed</span>, <input checked="true" class="filter" data-test-result="skipped" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">2 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -429,14 +429,92 @@ function filter_table(elem) {
           <th>Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">tests/test_cv_model_book.py::TestCase::test_book_read_case2::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;tests\\test_cv_model_book.py&#x27;, 11, &#x27;Skipped: skip跳过&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="skipped results-table-row">
+        <tr>
+          <td class="col-result">Skipped</td>
+          <td class="col-name">tests/test_cv_model_book.py::TestCase::test_book_read_case3::setup</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">(&#x27;tests\\test_cv_model_book.py&#x27;, 15, &#x27;Skipped: skipif跳过这条用例&#x27;)<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_cv_model_book.py::TestCase::test_book_read_case1</td>
+          <td class="col-duration">0.11</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>绘本id 50测试
+</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_cv_model_cover.py::TestCase::test_cv_model_cover_case1</td>
+          <td class="col-duration">0.10</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>获取封面模型
+</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_nlu_chat.py::TestCase::test_nlu_chat_case1</td>
+          <td class="col-duration">0.48</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>nlu-我想听恐龙大陆
+</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_nlu_chat.py::TestCase::test_nlu_chat_case2</td>
-          <td class="col-duration">0.29</td>
+          <td class="col-duration">0.27</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="log">----------------------------- Captured stdout call -----------------------------<br/>nlu-我想听蓝精灵
-{&#x27;errno&#x27;: 0, &#x27;errmsg&#x27;: &#x27;success&#x27;, &#x27;debug&#x27;: &#x27;success&#x27;, &#x27;data&#x27;: {&#x27;event_id&#x27;: 0, &#x27;listen&#x27;: False, &#x27;script&#x27;: &#x27;bWFpbjoKICAtIHBsYXlfdHRzIDVaeW81Ykd4NTVxRTZZS2o2TDY1Nzd5TTVyVzM1NXFFNllLajZMNjU1cHlKNUxpQTU3Nms2Sk9kNTdLKzU0RzE3N3lNNVp5bzVMMmc1NXFFNWE2MjZZZU03N3lNNUwyZzU1cUU1b0NBNlllTTVweUo1TGlBNVkrcTViQ1A1WTJpNVkyaDQ0Q0MKICAtIHBsYXlfc29uZyBleUozYjNKa2N5STZJdVdjcU9XeHNlZWFoT21DbytpK3VlKzhqT2ExdCtlYWhPbUNvK2krdWVhY2llUzRnT2UrcE9pVG5lZXl2dWVCdGUrOGpPV2NxT1M5b09lYWhPV3V0dW1Iak8rOGpPUzlvT2VhaE9hQWdPbUhqT2FjaWVTNGdPV1BxdVd3aitXTm91V05vZU9BZ2lJc0ltRnNZblZ0WDJsa0lqb2lOV0k1T1dNM01XVmxOak0xTW1Zek1EZ3hOelE0TVdNMklpd2lZV3hpZFcxZmJtRnRaU0k2SXVpVG5lZXl2dWVCdFNJc0luTjBiM0pwWlhNaU9sdDdJbWxrSWpvaU5XSTVPV05qTldKbE5qTTFNbVkwT0RoaFltVXhNelJtSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJhYkZoVldrTnBVbWcwYlZOQlJHdGZPRlZoZEdwM1RUY3dNQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qT0RWbE5qTTFNbVkwT0RoaFltVXhNemcySWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoVmxoNWNpMWZlbFZOYWtwQlF6RXpiVjk2WkhBd2R6VXlOQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTm1GbE5qTTFNbVkwT0RoaFltVXhNelZsSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJZYkZod1duRkhha00xVFRkQlJISmtSell3VEVNNU5EQXdOQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05pWWpKbE5qTTFNbVkwT0RoaFltVXhNamt4SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoUmxkNVJESXlSRWxOTjNwQlJFbEhlVVpXWlhaMldUazVNeTV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qWXpobE5qTTFNbVkwT0RoaFltVXhNMlEzSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoUmxnMFFtTnlVMEV4WW1WQlJHa3pWbDgyZVcxbVRUWXpNQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTm1SbE5qTTFNbVkwT0RoaFltVXhNell6SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoUmxneWJHbDVhWEJ2V1haQlEzazViMDl6YWpOd2N6a3hNeTV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05pTnpabE5qTTFNbVkwT0RoaFltVXhNak5rSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoTVZkdFZHcGZaMFE0VWxwQlF6RldRVGxPTmxkc1VUSTJNeTV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTVdWbE5qTTFNbVkwT0RoaFltVXhNbVk1SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJhTVZoRlpta3RlRkJSVGpOQlEzVlFNeTFhZVROb2R6RXhPQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTURkbE5qTTFNbVkwT0RoaFltVXhNbVJoSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoYkZnM04zZHhWR1IzWTFwQlJFSkpRVGgzU1hodE1Ea3hOeTV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTkdSbE5qTTFNbVkwT0RoaFltVXhNek5pSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJZVmxoU2RWcFlSSE5qZWpOQlJITm1TMmhsUm1OWll6azJOQzV0Y0RNaWZWMTk=&#x27;}}
+{&#x27;errno&#x27;: 0, &#x27;errmsg&#x27;: &#x27;success&#x27;, &#x27;debug&#x27;: &#x27;success&#x27;, &#x27;data&#x27;: {&#x27;event_id&#x27;: 0, &#x27;listen&#x27;: False, &#x27;script&#x27;: &#x27;bWFpbjoKICAtIHBsYXlfdHRzIDVvaVI1THVzNUxpQTZMVzM2TGVmNTUyQTZKT2Q1N0srNTRHMTVZNjc1WWFTNlptcAogIC0gcGxheV9zb25nIGV5SjNiM0prY3lJNkl1YUlrZVM3ck9TNGdPaTF0K2kzbitlZGdPaVRuZWV5dnVlQnRlV091K1dHa3VtWnFTSXNJbUZzWW5WdFgybGtJam9pTldJNU9XTTNNV1ZsTmpNMU1tWXpNRGd4TnpRNE1XTTJJaXdpWVd4aWRXMWZibUZ0WlNJNkl1aVRuZWV5dnVlQnRTSXNJbk4wYjNKcFpYTWlPbHQ3SW1sa0lqb2lOV0k1T1dOaVpURmxOak0xTW1ZME9EaGhZbVV4TW1Neklpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSWGJGYzBka1pQYVY4NFNUSkJRM0p3UTFoTmRWOVRiemsxTkM1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak5UTmxOak0xTW1ZME9EaGhZbVV4TXpReklpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSaVZsaE9jVmRpZHpjNWJHVkJRMFZNUWkxVGVFdEhZelkyTVM1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak5tRmxOak0xTW1ZME9EaGhZbVV4TXpWbElpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSWWJGaHdXbkZIYWtNMVRUZEJSSEprUnpZd1RFTTVOREF3TkM1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak5UWmxOak0xTW1ZME9EaGhZbVV4TXpRNUlpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSYVJsaE1SVGN6VVVkTGMxRkJRalIzTjIxU1MyVXphemc1TXk1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak1EZGxOak0xTW1ZME9EaGhZbVV4TW1SaElpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSaGJGZzNOM2R4VkdSM1kxcEJSRUpKUVRoM1NYaHRNRGt4Tnk1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOaU56WmxOak0xTW1ZME9EaGhZbVV4TWpOa0lpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSaE1WZHRWR3BmWjBRNFVscEJRekZXUVRsT05sZHNVVEkyTXk1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak5qSmxOak0xTW1ZME9EaGhZbVV4TXpVMklpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSYWJGaHJUV2xJVVhKMWEzRkJSR2xKY1RVd1psSlNNREkxT0M1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak5XWmxOak0xTW1ZME9EaGhZbVV4TXpVMElpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSYU1WaFhPREpVWjIxdWQyWkJSRzFJYldobWF6aE1TVGc0TWk1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak5HUmxOak0xTW1ZME9EaGhZbVV4TXpOaUlpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSWVZsaFNkVnBZUkhOamVqTkJSSE5tUzJobFJtTlpZemsyTkM1dGNETWlmU3g3SW1sa0lqb2lOV0k1T1dOak9EVmxOak0xTW1ZME9EaGhZbVV4TXpnMklpd2libUZ0WlNJNklpSXNJblZ5YkNJNkltaDBkSEJ6T2k4dmNIVmliR2xqTFc5emN5NXNhVzVuTG1OdUwyeDFhMkV2YzNSdmNua3ZhR0Z1WkhCcFkyc3ZibXgxTDJGMVpHbHZMM2RMWjBSaFZsaDVjaTFmZWxWTmFrcEJRekV6YlY5NlpIQXdkelV5TkM1dGNETWlmVjE5&#x27;}}
+</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_robot_login.py::TestCase::test_robot_login_case1</td>
+          <td class="col-duration">0.08</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>8位设备码测试
+</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_robot_richscan.py::TestCase::test_robot_richscan_case1</td>
+          <td class="col-duration">0.12</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>设备扫一扫
+</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_robots_me.py::TestCase::test_robots_me_case1</td>
+          <td class="col-duration">0.19</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">----------------------------- Captured stdout call -----------------------------<br/>获取robot关联的用户信息
 </div></td></tr></tbody></table></body></html>

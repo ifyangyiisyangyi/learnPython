@@ -34,12 +34,11 @@ def cv_model_book(book_id):  # 获取绘本模型
     return get_request_maker('get', url)
 
 
-
-def cv_card_model(): # 获取卡片模型
+def cv_card_model():  # 获取卡片模型
     return get_request_maker('get', '/cv/card-models/0/latest')
 
 
-def cv_cards(): # 获取卡片信息
+def cv_cards():  # 获取卡片信息
     return get_request_maker('get', '/cv/cards/{card}')
 
 
@@ -88,7 +87,7 @@ def del_favorites():  # 单曲删除收藏
     return get_request_maker('delete', '/favorites', data)
 
 
-def nlu_chat(words): # nlu闲聊
+def nlu_chat(words):  # nlu闲聊
     data = {
         "data": {
             "type": "nlu",
@@ -109,4 +108,6 @@ def nlu_chat(words): # nlu闲聊
 
 
 if __name__ == '__main__':
-    print(cv_card_model())
+    script = nlu_chat('蓝精灵')
+    print(script)
+
