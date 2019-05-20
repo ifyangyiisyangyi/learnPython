@@ -7,4 +7,3 @@ class TestCase:
     def test_cv_model_cover_case1(self):
         print("获取封面模型")
         assert cv_model_cover()['errmsg'] == "success"
-

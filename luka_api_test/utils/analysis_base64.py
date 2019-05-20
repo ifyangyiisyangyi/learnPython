@@ -5,11 +5,12 @@ import yaml
 def analysis_base64(words):
     script = base64.b64decode(words['data']['script'])
     result = yaml.load(script, Loader=yaml.FullLoader)['main']
+    res = ""
     for i in result:
         result = i.split(' ')[-1]
-        print(str(base64.b64decode(result), "utf-8"))
+        res += str(base64.b64decode(result), "utf-8")
 
-    return
+    return res
 
 
 if __name__ == '__main__':
