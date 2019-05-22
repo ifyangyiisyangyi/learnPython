@@ -1,18 +1,27 @@
 import base64
 import yaml
 
+nlu = {}
+
 
 def analysis_base64(words):
     script = base64.b64decode(words['data']['script'])
     result = yaml.load(script, Loader=yaml.FullLoader)['main']
-    res = ""
+    # print(result)
     for i in result:
-        result = i.split(' ')[-1]
-        res += str(base64.b64decode(result), "utf-8")
-
-    return res
+        print(i)
+        # print(result)
+        if i.split(' ')[0] == 'play_tts':
+            nlu['play_tts'] = str(base64.b64decode(i.split(' ')[-1]), 'utf-8')
+        elif i.split(' ')[0] == 'play_song':
+            nlu['play_song'] = str(base64.b64decode(i.split(' ')[-1]), 'utf-8')
+        elif i.split(' ')[0] == 'play_audio':
+            nlu['play_audio'] = i.split(' ')[-2] + ' ' + i.split(' ')[-1]
+    print(nlu)
+    return
 
 
 if __name__ == '__main__':
-    analysis_base64({'errno': 0, 'errmsg': 'success', 'debug': 'success', 'data': {'event_id': 0, 'listen': False, 'script': 'bWFpbjoKICAtIHBsYXlfdHRzIDVaeW81Ykd4NTVxRTZZS2o2TDY1Nzd5TTVyVzM1NXFFNllLajZMNjU1cHlKNUxpQTU3Nms2Sk9kNTdLKzU0RzE3N3lNNVp5bzVMMmc1NXFFNWE2MjZZZU03N3lNNUwyZzU1cUU1b0NBNlllTTVweUo1TGlBNVkrcTViQ1A1WTJpNVkyaDQ0Q0MKICAtIHBsYXlfc29uZyBleUozYjNKa2N5STZJdVdjcU9XeHNlZWFoT21DbytpK3VlKzhqT2ExdCtlYWhPbUNvK2krdWVhY2llUzRnT2UrcE9pVG5lZXl2dWVCdGUrOGpPV2NxT1M5b09lYWhPV3V0dW1Iak8rOGpPUzlvT2VhaE9hQWdPbUhqT2FjaWVTNGdPV1BxdVd3aitXTm91V05vZU9BZ2lJc0ltRnNZblZ0WDJsa0lqb2lOV0k1T1dNM01XVmxOak0xTW1Zek1EZ3hOelE0TVdNMklpd2lZV3hpZFcxZmJtRnRaU0k2SXVpVG5lZXl2dWVCdFNJc0luTjBiM0pwWlhNaU9sdDdJbWxrSWpvaU5XSTVPV05qTlRabE5qTTFNbVkwT0RoaFltVXhNelE1SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJhUmxoTVJUY3pVVWRMYzFGQlFqUjNOMjFTUzJVemF6ZzVNeTV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qT0dKbE5qTTFNbVkwT0RoaFltVXhNemhrSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJhTVZoMFdHOXlRVWgyUVVGQlEzaDZkV3BZZHpWUVdUTXlOeTV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qT0RkbE5qTTFNbVkwT0RoaFltVXhNemc1SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJaTVZoaVFUSTJRVzh0TFZSQlExazFVemg1UkZVeU9EQTVPQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTWpKbE5qTTFNbVkwT0RoaFltVXhNbVpqSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoYkZoQ09XMVlhVTVGTVdSQlEwUXRTbkZEWnpadlZUVXlOUzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qWXpobE5qTTFNbVkwT0RoaFltVXhNMlEzSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoUmxnMFFtTnlVMEV4WW1WQlJHa3pWbDgyZVcxbVRUWXpNQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05pWlRGbE5qTTFNbVkwT0RoaFltVXhNbU16SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJYYkZjMGRrWlBhVjg0U1RKQlEzSndRMWhOZFY5VGJ6azFOQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTVdWbE5qTTFNbVkwT0RoaFltVXhNbVk1SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJhTVZoRlpta3RlRkJSVGpOQlEzVlFNeTFhZVROb2R6RXhPQzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV1EzWlRSbE5qTTFNbVkwT0RoaFltVXhaV0pqSWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJaVmxjM1drSmlaMlYwTlVwQlEzUkplR1JpVlUxQ2N6WTBNUzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qTlRObE5qTTFNbVkwT0RoaFltVXhNelF6SWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJpVmxoT2NWZGlkemM1YkdWQlEwVk1RaTFUZUV0SFl6WTJNUzV0Y0RNaWZTeDdJbWxrSWpvaU5XSTVPV05qT0RWbE5qTTFNbVkwT0RoaFltVXhNemcySWl3aWJtRnRaU0k2SWlJc0luVnliQ0k2SW1oMGRIQnpPaTh2Y0hWaWJHbGpMVzl6Y3k1c2FXNW5MbU51TDJ4MWEyRXZjM1J2Y25rdmFHRnVaSEJwWTJzdmJteDFMMkYxWkdsdkwzZExaMFJoVmxoNWNpMWZlbFZOYWtwQlF6RXpiVjk2WkhBd2R6VXlOQzV0Y0RNaWZWMTk='}})
+    words = {'errno': 0, 'errmsg': 'success', 'debug': 'success', 'data': {'event_id': 0, 'listen': False,'script': 'bWFpbjoKICAtIHBsYXlfdHRzIDVMaUE1WXFnNUxpQTU2Mko1THFPTWc9PQogIC0gc3RhcnQgc3ViCiAgLSBwbGF5X2F1ZGlvIC0tdHlwZT1hc3NldHMgc3BlZWNoX3NvdW5kLm1wMwpzdWI6CiAgLSBwbGF5X2FjdGlvbiBsaXN0ZW4='}}
 
+    analysis_base64(words)

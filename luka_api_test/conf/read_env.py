@@ -10,5 +10,7 @@ f = open(yamlPath, 'r', encoding='utf-8')
 result = f.read()
 test_data = yaml.load(result, Loader=yaml.FullLoader) # PyYaml 5.1版本弃用了load()原本用法，需要加上 Loader
 
+
 if __name__ == '__main__':
-    print(test_data)
+    print(os.getcwd())  # 获取当前文件路径
+    print(os.path.abspath('../testdata/testdata.txt'))
