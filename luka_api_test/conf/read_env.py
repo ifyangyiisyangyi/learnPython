@@ -12,5 +12,4 @@ test_data = yaml.load(result, Loader=yaml.FullLoader) # PyYaml 5.1版本弃用�
 
 
 if __name__ == '__main__':
-    print(os.getcwd())  # 获取当前文件路径
-    print(os.path.abspath('../testdata/testdata.txt'))
+    print(test_data)

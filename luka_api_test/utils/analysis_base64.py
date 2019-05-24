@@ -9,16 +9,14 @@ def analysis_base64(words):
     result = yaml.load(script, Loader=yaml.FullLoader)['main']
     # print(result)
     for i in result:
-        print(i)
         # print(result)
         if i.split(' ')[0] == 'play_tts':
             nlu['play_tts'] = str(base64.b64decode(i.split(' ')[-1]), 'utf-8')
         elif i.split(' ')[0] == 'play_song':
             nlu['play_song'] = str(base64.b64decode(i.split(' ')[-1]), 'utf-8')
-        elif i.split(' ')[0] == 'play_audio':
-            nlu['play_audio'] = i.split(' ')[-2] + ' ' + i.split(' ')[-1]
-    print(nlu)
-    return
+        # elif i.split(' ')[0] == 'play_audio':
+        #     nlu['play_audio'] = str(base64.b64decode(i.split(' ')[-1]), 'utf-8')
+    return nlu
 
 
 if __name__ == '__main__':

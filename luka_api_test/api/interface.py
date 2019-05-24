@@ -21,7 +21,7 @@ def cv_model_cover():  # 获取封面模型
     return get_request_maker('get', '/cv/model/cover')
 
 
-def record_books_cover_model(): # 获取拍录绘本封面模型
+def record_books_cover_model():  # 获取拍录绘本封面模型
     return get_request_maker('get', '/record-books/cover/model')
 
 
@@ -110,4 +110,3 @@ def nlu_chat(words):  # nlu闲聊
 if __name__ == '__main__':
     script = nlu_chat('蓝精灵')
     print(script)
-

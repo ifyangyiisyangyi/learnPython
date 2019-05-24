@@ -12,7 +12,7 @@ from conf import read_env
 def get_robot_token(udid):
     urll = read_env.test_data["url"] + "/robot-login"
     headers = {
-        "Accept": "application/vnd.luka." + read_env.test_data["api_version"] + "+json",
+        "Accept": "application/vnd.{}+json".format(read_env.test_data["api_version"]),
         "Content-Type": "application/json",
         "Accept-Language": read_env.test_data["lang"]
     }
