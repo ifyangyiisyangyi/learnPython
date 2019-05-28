@@ -20,6 +20,7 @@ def analysis_base64(words):
 
 
 if __name__ == '__main__':
-    words = {'errno': 0, 'errmsg': 'success', 'debug': 'success', 'data': {'event_id': 0, 'listen': False,'script': 'bWFpbjoKICAtIHBsYXlfdHRzIDVMaUE1WXFnNUxpQTU2Mko1THFPTWc9PQogIC0gc3RhcnQgc3ViCiAgLSBwbGF5X2F1ZGlvIC0tdHlwZT1hc3NldHMgc3BlZWNoX3NvdW5kLm1wMwpzdWI6CiAgLSBwbGF5X2FjdGlvbiBsaXN0ZW4='}}
+    words = {'errno': 0, 'errmsg': 'success', 'debug': 'success', 'data': {'event_id': 0, 'listen': False,
+                                                                           'script': 'bWFpbjoKICAtIHBsYXlfdHRzIDVMaUE1WXFnNUxpQTU2Mko1THFPTWc9PQogIC0gc3RhcnQgc3ViCiAgLSBwbGF5X2F1ZGlvIC0tdHlwZT1hc3NldHMgc3BlZWNoX3NvdW5kLm1wMwpzdWI6CiAgLSBwbGF5X2FjdGlvbiBsaXN0ZW4='}}
 
     analysis_base64(words)

@@ -10,7 +10,7 @@ yamlPath = os.path.join(filePath, "env.yml")  # 路径拼接，返回配置文�
 envPath = os.path.join(filePath, 'current_env.json')
 with open(yamlPath, 'r', encoding='utf-8') as f:
     result = f.read()
-    test_data = yaml.load(result, Loader=yaml.FullLoader) # PyYaml 5.1版本弃用了load()原本用法，需要加上 Loader
+    test_data = yaml.load(result, Loader=yaml.FullLoader)  # PyYaml 5.1版本弃用了load()原本用法，需要加上 Loader
 if os.path.exists(envPath):
     with open(envPath, 'r', encoding='utf-8') as f:
         result = f.read()

@@ -1,7 +1,7 @@
-import pytest
 import os
-import time
 import json
+
+from utils.save_reports import save_reports
 
 
 def main(device_type='luka', **kwargs):
@@ -11,24 +11,23 @@ def main(device_type='luka', **kwargs):
 
     env_path = os.path.join(os.path.abspath('.'), 'conf/current_env.json')
     with open(env_path, 'w') as f:
-        json.dump(current_env_dict, f)
+        json.dump(current_env_dict, f)  # 保存环境变量
 
-    print(os.path.abspath('.'))
-    report_path = os.path.join(os.path.abspath('.'), 'report/')
-    print(report_path)
-    now = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
+    save_reports(device_type)
 
-    if device_type == 'luka':
-        luka_report_name = report_path + 'luka-' + now + '.html'
-        pytest.main(['-v', '--html=' + luka_report_name, '--self-contained-html'])
-    elif device_type == 'baby':
-        baby_report_name = report_path + 'baby-' + now + '.html'
-        pytest.main(['-m', 'baby', '-v', '--html=' + baby_report_name, '--self-contained-html'])
-
-    if (os.path.exists(env_path)):
+    if (os.path.exists(env_path)):  # 删除保存环境变量的临时json文件
         os.remove(env_path)
     else:
         print('current_env is not exists~')
 
+
 if __name__ == '__main__':
+    '''
+    默认环境变量
+    device_type = 'luka'
+    url = 'http://luka-api.test1.k8s-qa.linglove.cn
+    api_version = 'luka.v1.15'
+    lang = 'zh_CN'
+    udid = '24NQRQJZ27'
+    '''
     main()

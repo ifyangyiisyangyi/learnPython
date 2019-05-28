@@ -1,6 +1,7 @@
 from api.interface import robot_richscan
 import pytest
 
+
 class TestCase:
     @pytest.mark.smoke
     @pytest.mark.baby
