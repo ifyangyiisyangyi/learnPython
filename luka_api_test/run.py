@@ -1,5 +1,6 @@
 import os
 import json
+import time
 
 from utils.save_reports import save_reports
 
@@ -30,4 +31,8 @@ if __name__ == '__main__':
     lang = 'zh_CN'
     udid = '24NQRQJZ27'
     '''
+    start_time = time.time()
     main()
+    main('baby', url = 'https://luka-baby-api.ling.cn', api_version = 'luka-baby.v1.1', udid = 'FRFE9EYS')
+    total_time = (time.time() - start_time)
+    print('耗时：', int(total_time), '秒')
