@@ -15,3 +15,7 @@ def save_reports(device_type):
         pytest.main(['-m', 'baby', '-v', '--html=' + baby_report_name, '--self-contained-html'])
     else:
         print('无效的设备类型')
+
+
+if __name__ == '__main__':
+    print(int(time.time()))
