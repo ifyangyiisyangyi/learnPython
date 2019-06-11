@@ -2,6 +2,7 @@ import os
 import json
 import time
 
+from utils.get_robot_token import get_robot_token
 from utils.save_reports import save_reports
 
 
@@ -37,3 +38,4 @@ if __name__ == '__main__':
     # main('baby', url='https://luka-baby-api.ling.cn', api_version='luka-baby.v1.1', udid='FRFE9EYS')
     total_time = (time.time() - start_time)
     print('耗时：', int(total_time), '秒')
+    print(f'获取token次数: {get_robot_token.count}')
