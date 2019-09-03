@@ -3,15 +3,17 @@ flask test
 
 """
 
-from flask import Flask, url_for
+from flask import Flask
+import requests
+import json
 
 app = Flask(__name__)
 
 url = "http://luka-api.test1.k8s-qa.linglove.cn"
 
 
-@app.route('/name/password')
-def get_app_token(url):
+@app.route('/login/')
+def get_app_token():
     urll = url + "/app-login"
     headers = {
         "Accept": "application/vnd.luka.v1.15+json",
@@ -23,8 +25,8 @@ def get_app_token(url):
             "type": "app-login",
             "attributes": {
                 "region": "CN",
-                "name": name,
-                "password": password
+                "name": '18859285396',
+                "password": '123456a'
             }
         }
     }
