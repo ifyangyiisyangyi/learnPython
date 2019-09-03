@@ -3,7 +3,8 @@ flask test
 
 """
 
-from flask import Flask
+from flask import Flask, url_for
+from flask import render_template
 import requests
 import json
 
@@ -36,6 +37,15 @@ def get_app_token():
     return token
 
 
+@app.route('/html/')
+def test():
+    return render_template('hello.html')
+
+
+@app.route('/')
+def js():
+    return render_template('index.html')
+
+
 if __name__ == '__main__':
-    # app.debug = True
     app.run(debug=True)
