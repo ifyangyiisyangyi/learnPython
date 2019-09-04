@@ -12,4 +12,28 @@
 {#字典的使用#}
 {{ my_dict }}<br>
 {{ my_dict.name }}<br>
-{{ my_dict['name'] }}<br>
+{{ my_dict['name'] }}
+
+<hr>
+
+{#控制代码块#}
+{#for 循环#}
+{% for num in my_list %}
+    {% if num > 2 %}
+    {{ num }}<br>
+    {% endif %}
+{% endfor %}
+
+<hr>
+
+
+{#过滤器#}
+{#小写转大写#}
+{{ url_str | upper }}
+<br>
+{#字符串翻转#}
+{{ url_str | reverse }}
+
+<br>
+{#过滤器链式调用#}
+{{ url_str | upper | reverse }}
