@@ -120,5 +120,17 @@ def robot_footmarks(track_id, time):  # 播放足迹
     return request_maker('post', '/robot-footmarks', data)
 
 
+def robot_books(picture_book_ids):  # 获取绘本模式及音频
+    data = {
+        "data": {
+            "type": "picture-book",
+            "attributes": {
+                "picture_book_ids": picture_book_ids
+            }
+        }
+    }
+    return request_maker('post', '/robot/books', data)
+
+
 if __name__ == '__main__':
     print(robot_footmarks("a488f2542ceeaed6560a5ee50ede232a", 1559197680))
