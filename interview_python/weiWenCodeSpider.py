@@ -29,4 +29,6 @@ for i in htmlList:
     print(type(i))
     print(re.findall('.*href="(.*)" style.*', str(i))[0]) # 打印一日一技的链接后缀
 
+	
+# test
 
