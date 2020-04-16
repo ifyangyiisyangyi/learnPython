@@ -1,3 +1,9 @@
 {# 这是一个注释 #}
-<h1>{{ hello }}</h1>
+
+{% extends "base.html" %}
+
+{% block mainbody %}
+<p> 继承了 base.html 文件</p>
+{% endblock %}
 {% include "include_test.html" %}
+
