@@ -17,12 +17,5 @@ class ControlUser(admin.ModelAdmin):
 admin.site.register(models.User, ControlUser)
 
 
-class ControlArticle(admin.ModelAdmin):
-    # 显示的字段
-    list_display = ('title', 'body', 'auth', 'create_time', 'update_time')
-    # 搜索条件
-    search_fields = ('title',)
-# 注册Article表
-admin.site.register(models.Article, ControlArticle)
 
 
