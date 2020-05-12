@@ -9,8 +9,8 @@ class User(models.Model):
     user_pwd = models.CharField(max_length=30)
     user_mail = models.CharField(max_length=30)
 
-    def __str__(self):
-        return self.__doc__ + ":user_name --> " + self.user_name
+    # def __str__(self):
+    #     return self.__doc__ + ":user_name --> " + self.user_name
 
 
 

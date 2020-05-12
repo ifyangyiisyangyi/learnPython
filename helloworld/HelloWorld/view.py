@@ -4,16 +4,21 @@ from TestModel.models import User
 
 
 def hello(request):
-    context = {}
-    context['hello'] = 'hello nicolas junjie!'
-    return render(request, 'hello.html', context)
+
+    # data = User(user_name = 'peter', user_pwd = '123456a').user_name
+    data = User.objects.all()
+    print(type(data))
+    print(data)
+    data1 = []
+    for i in data:
+        data1.append(i.user_name)
+    return render(request, 'base.html', {'data': data1})
 
 
 # 测试QQ号访问页面
 def test_qq(request):
     '''请求页面'''
     return render(request, 'get_demo.html')
-
 
 # 提交后返回页面
 def result_qq(request):

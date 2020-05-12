@@ -5,9 +5,10 @@
 		</title>
 	</head>
 	<body>
-		<h1>base模板的标题</h1>
-		{% block mainbody %}
-		<p>original</p>
-		{% endblock %}
+	 <ul>
+		 {% for athlete in data %}
+		 <li>{{ athlete }}</li>
+		 {% endfor %}
+	 </ul>
 	</body>
 </html>
