@@ -17,6 +17,4 @@ urlpatterns = [
     url(r'^login', view.login),
 ]
 
-
-
 urlpatterns += staticfiles_urlpatterns()
