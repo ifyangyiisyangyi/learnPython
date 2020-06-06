@@ -5,7 +5,7 @@ import random
 import threading
 
 
-def index(request):
+def show_404(request):
     return render(request, '404.html')
 
 
@@ -70,3 +70,5 @@ def gameResult(request):
             result = 'bingo'
             return render(request, 'game.html', {'result': result})
 
+def login(request):
+    return render(request, 'index.html')
