@@ -3,7 +3,7 @@
   $(window).on("load", function() { // makes sure the whole site is loaded
     //preloader
     $("#status").fadeOut(); // will first fade out the loading animation
-    $("#preloader").delay(450).fadeOut("slow"); // will fade out the white DIV that covers the website.
+    $("#preloader").delay(1000).fadeOut("slow"); // will fade out the white DIV that covers the website.
     
     //masonry
     $('.grid').masonry({
@@ -90,7 +90,7 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["My Name is M.Reza", "I'm a Web Designer", "Love Simplicity"],
+        strings: ["我叫杨毅", "我是一名测试工程师", "我和BUG势不两立"],
         typeSpeed: 100,
         backDelay: 900,
         // loop

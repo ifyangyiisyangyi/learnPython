@@ -447,7 +447,7 @@ p {
 }
 #home .typed {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 30px;
   line-height: 26px;
   letter-spacing: 1.5px;
   margin: 0 auto;
@@ -507,9 +507,9 @@ p {
   left: 50%;
   top: 50%;
   padding: 65px;
-  background: rgba(255, 255, 255, 0.8);
-  outline: 4px double #FFFFFF;
-  outline-offset: 8px;
+  background: rgba(255, 255, 255, 0);        /* 第四个参数是透明度，0代表透明 */
+/*outline: 4px double #FFFFFF;
+  outline-offset: 8px; */                    /* 加个外框 */
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
