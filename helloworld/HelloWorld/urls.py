@@ -14,7 +14,8 @@ urlpatterns = [
     url(r'^getEmail/', view.user),
     url(r'^game/', view.game),
     url(r'^gameResult', view.gameResult),
-    url(r'^login', view.login),
+    url(r'^login/', view.login),
+    url(r'^save_message', view.save_message),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

@@ -887,15 +887,15 @@
 
 					</div>
 					<div class="col-md-9 content-right">
-						<form>
+						<form action="/save_message", method="GET">
 							<div class="group">
-								<input required="" type="text"><span class="highlight"></span><span class="bar"></span><label>您的姓名</label>
+								<input required="" type="text" name="name"><span class="highlight"></span><span class="bar"></span><label>您的姓名</label>
 							</div>
 							<div class="group">
-								<input required="" type="email"><span class="highlight"></span><span class="bar"></span><label>您的邮箱</label>
+								<input required="" type="email" name="email"><span class="highlight"></span><span class="bar"></span><label>您的邮箱</label>
 							</div>
 							<div class="group">
-								<textarea required=""></textarea><span class="highlight"></span><span class="bar"></span><label>您的留言</label>
+								<textarea required="" name="message"></textarea><span class="highlight"></span><span class="bar"></span><label>您的留言</label>
 							</div>
 							<input id="sendMessage" name="sendMessage" type="submit" value="发送">
 						</form>
@@ -903,7 +903,7 @@
 				</div>
 			</div>
 		</section>
-		<!--/.联系我 END-->
+		<!--/.   联系我 END-->
 
 		<!--FOOTER-->
 		<footer>

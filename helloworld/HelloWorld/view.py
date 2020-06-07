@@ -2,7 +2,6 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from TestModel.models import User
 import random
-import threading
 
 
 def show_404(request):
@@ -72,3 +71,14 @@ def gameResult(request):
 
 def login(request):
     return render(request, 'index.html')
+
+
+def save_message(request):
+    if request.method == "GET":
+        name = request.GET.get("name")
+        email = request.GET.get('email')
+        message = request.GET.get('message')
+        print(name)
+        print(email)
+        print(message)
+    return HttpResponse('success')
