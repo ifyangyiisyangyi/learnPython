@@ -887,7 +887,7 @@
 
 					</div>
 					<div class="col-md-9 content-right">
-						<form action="/save_message", method="GET">
+						<form action="/save_message", method="POST">
 							<div class="group">
 								<input required="" type="text" name="name"><span class="highlight"></span><span class="bar"></span><label>您的姓名</label>
 							</div>
@@ -897,7 +897,7 @@
 							<div class="group">
 								<textarea required="" name="message"></textarea><span class="highlight"></span><span class="bar"></span><label>您的留言</label>
 							</div>
-							<input id="sendMessage" name="sendMessage" type="submit" value="发送">
+							<input id="sendMessage" name="sendMessage" type="submit" value="发送" >
 						</form>
 					</div>
 				</div>
@@ -948,5 +948,7 @@
 <script src="/static/js/smooth-scroll.min.js" type="text/javascript"></script>
 <script src="/static/js/typed.js" type="text/javascript"></script>
 <script src="/static/js/main.js" type="text/javascript"></script>
+
+
 </body>
 </html>

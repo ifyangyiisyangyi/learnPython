@@ -11,6 +11,10 @@ class User(models.Model):
 
     # def __str__(self):
     #     return self.__doc__ + ":user_name --> " + self.user_name
-
-
+class Message(models.Model):
+    '''留言表'''
+    name = models.CharField(max_length=30)
+    email = models.CharField(max_length=30)
+    message = models.CharField(max_length=30)
+    create_time = models.DateTimeField(auto_now_add=True)
 

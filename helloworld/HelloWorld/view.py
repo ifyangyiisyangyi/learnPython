@@ -1,6 +1,6 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from TestModel.models import User
+from TestModel.models import User,Message
 import random
 
 
@@ -74,11 +74,16 @@ def login(request):
 
 
 def save_message(request):
-    if request.method == "GET":
-        name = request.GET.get("name")
-        email = request.GET.get('email')
-        message = request.GET.get('message')
+    if request.method == "POST":
+        name = request.POST.get("name")
+        email = request.POST.get('email')
+        message = request.POST.get('message')
         print(name)
         print(email)
         print(message)
-    return HttpResponse('success')
+        test1 = Message(name = name,
+                        email = email,
+                        message = message
+                        )
+        test1.save()
+    return render(request, 'index.html')
