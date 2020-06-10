@@ -1,7 +1,10 @@
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-from TestModel.models import User,Message
+from TestModel.models import User, Message, Blog
 import random
+import json
+from django.core import serializers
+
 
 
 def show_404(request):
@@ -70,7 +73,8 @@ def gameResult(request):
             return render(request, 'game.html', {'result': result})
 
 def login(request):
-    return render(request, 'index.html')
+    title = '点我跳转到github'
+    return render(request, 'index.html', {'title' : title})
 
 
 def save_message(request):
@@ -78,12 +82,13 @@ def save_message(request):
         name = request.POST.get("name")
         email = request.POST.get('email')
         message = request.POST.get('message')
-        print(name)
-        print(email)
-        print(message)
+
         test1 = Message(name = name,
                         email = email,
                         message = message
                         )
         test1.save()
     return render(request, 'index.html')
+
+
+

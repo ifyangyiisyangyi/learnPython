@@ -18,3 +18,9 @@ class Message(models.Model):
     message = models.CharField(max_length=30)
     create_time = models.DateTimeField(auto_now_add=True)
 
+class Blog(models.Model):
+    '''博客表'''
+    blog_title = models.CharField(max_length=30)
+    blog_date = models.DateField()
+    blog_content = models.TextField()
+
