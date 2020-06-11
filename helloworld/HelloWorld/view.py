@@ -1,10 +1,10 @@
+from django.forms import model_to_dict
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
 from TestModel.models import User, Message, Blog
 import random
 import json
 from django.core import serializers
-
 
 
 def show_404(request):
@@ -57,7 +57,6 @@ def game(request):
 
 def gameResult(request):
     random_num = random.randint(0, 3)
-    result = '...'
     '''返回结果'''
     if request.method == 'GET':
         # 获取提交的数据
@@ -72,9 +71,10 @@ def gameResult(request):
             result = 'bingo'
             return render(request, 'game.html', {'result': result})
 
+
 def login(request):
-    title = '点我跳转到github'
-    return render(request, 'index.html', {'title' : title})
+    blog_info = model_to_dict(Blog.objects.get(id=1))
+    return render(request, 'index.html', {'blog_info': blog_info})
 
 
 def save_message(request):
@@ -83,12 +83,9 @@ def save_message(request):
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        test1 = Message(name = name,
-                        email = email,
-                        message = message
+        test1 = Message(name=name,
+                        email=email,
+                        message=message
                         )
         test1.save()
     return render(request, 'index.html')
-
-
-
