@@ -196,7 +196,12 @@
                             <span>相册</span>
                         </h3>
                         <p class="content-detail">
-                            相册
+                            <form >
+<!--                                {% csrf_token %}-->
+                                <div>用户名<input type="username" name="username"></div>
+                                <div>文件  <input type="file" name="file"></div>
+                                <div><input type="submit"></div>
+                        </form>
                         </p>
                     </div>
                     <div class="col-md-9 content-right">
@@ -389,9 +394,9 @@
                 </div>
             </div>
         </section>
-        /.SERVICES END
+<!--        /.SERVICES END-->
 
-        EMPLOYEMENT
+<!--        EMPLOYEMENT-->
         <section class="grey-bg" id="employement">
             <div class="container">
                 <div class="row">
@@ -627,90 +632,90 @@
                                     </div>
                                 </li>
 
-<!--                                <li>-->
-<!--                                    <div class="col-md-6 col-sm-6">-->
-<!--                                        <div class="wrap-card">-->
-<!--                                            <div class="card">-->
-<!--                                                <h2 class="year">-->
-<!--                                                    2005 - 2007-->
-<!--                                                </h2>-->
-<!--                                                <p class="job">-->
-<!--                                                    DKV-->
-<!--                                                </p>-->
-<!--                                                <p class="company">-->
-<!--                                                    UNIKOM-->
-<!--                                                </p>-->
-<!--                                                <hr>-->
-<!--                                                <div class="text-detail">-->
-<!--                                                    <p>-->
-<!--                                                        Claritas est etiam processus dynamicus, qui sequitur mutationem-->
-<!--                                                        consuetudium lectorum. Mirum est notare quam littera gothica,-->
-<!--                                                        quam nunc putamus parum claram, anteposuerit litterarum formas-->
-<!--                                                        humanita per seacula quarta decima et quinta decima. Eodem modo-->
-<!--                                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes.-->
-<!--                                                    </p>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </li>-->
-<!--                            </ul>-->
-<!--                            <ul class="listing-item">-->
-<!--                                <li>-->
-<!--                                    <div class="col-md-6 col-sm-6">-->
-<!--                                        <div class="wrap-card">-->
-<!--                                            <div class="card">-->
-<!--                                                <h2 class="year">-->
-<!--                                                    2007 - 2009-->
-<!--                                                </h2>-->
-<!--                                                <p class="job">-->
-<!--                                                    Magister DKV-->
-<!--                                                </p>-->
-<!--                                                <p class="company">-->
-<!--                                                    ITB-->
-<!--                                                </p>-->
-<!--                                                <hr>-->
-<!--                                                <div class="text-detail">-->
-<!--                                                    <p>-->
-<!--                                                        Claritas est etiam processus dynamicus, qui sequitur mutationem-->
-<!--                                                        consuetudium lectorum. Mirum est notare quam littera gothica,-->
-<!--                                                        quam nunc putamus parum claram, anteposuerit litterarum formas-->
-<!--                                                        humanita per seacula quarta decima et quinta decima. Eodem modo-->
-<!--                                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes.-->
-<!--                                                    </p>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </li>-->
+                                <!--                                <li>-->
+                                <!--                                    <div class="col-md-6 col-sm-6">-->
+                                <!--                                        <div class="wrap-card">-->
+                                <!--                                            <div class="card">-->
+                                <!--                                                <h2 class="year">-->
+                                <!--                                                    2005 - 2007-->
+                                <!--                                                </h2>-->
+                                <!--                                                <p class="job">-->
+                                <!--                                                    DKV-->
+                                <!--                                                </p>-->
+                                <!--                                                <p class="company">-->
+                                <!--                                                    UNIKOM-->
+                                <!--                                                </p>-->
+                                <!--                                                <hr>-->
+                                <!--                                                <div class="text-detail">-->
+                                <!--                                                    <p>-->
+                                <!--                                                        Claritas est etiam processus dynamicus, qui sequitur mutationem-->
+                                <!--                                                        consuetudium lectorum. Mirum est notare quam littera gothica,-->
+                                <!--                                                        quam nunc putamus parum claram, anteposuerit litterarum formas-->
+                                <!--                                                        humanita per seacula quarta decima et quinta decima. Eodem modo-->
+                                <!--                                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes.-->
+                                <!--                                                    </p>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </li>-->
+                                <!--                            </ul>-->
+                                <!--                            <ul class="listing-item">-->
+                                <!--                                <li>-->
+                                <!--                                    <div class="col-md-6 col-sm-6">-->
+                                <!--                                        <div class="wrap-card">-->
+                                <!--                                            <div class="card">-->
+                                <!--                                                <h2 class="year">-->
+                                <!--                                                    2007 - 2009-->
+                                <!--                                                </h2>-->
+                                <!--                                                <p class="job">-->
+                                <!--                                                    Magister DKV-->
+                                <!--                                                </p>-->
+                                <!--                                                <p class="company">-->
+                                <!--                                                    ITB-->
+                                <!--                                                </p>-->
+                                <!--                                                <hr>-->
+                                <!--                                                <div class="text-detail">-->
+                                <!--                                                    <p>-->
+                                <!--                                                        Claritas est etiam processus dynamicus, qui sequitur mutationem-->
+                                <!--                                                        consuetudium lectorum. Mirum est notare quam littera gothica,-->
+                                <!--                                                        quam nunc putamus parum claram, anteposuerit litterarum formas-->
+                                <!--                                                        humanita per seacula quarta decima et quinta decima. Eodem modo-->
+                                <!--                                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes.-->
+                                <!--                                                    </p>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </li>-->
 
-<!--                                <li>-->
-<!--                                    <div class="col-md-6 col-sm-6">-->
-<!--                                        <div class="wrap-card">-->
-<!--                                            <div class="card">-->
-<!--                                                <h2 class="year">-->
-<!--                                                    2009 - 2010-->
-<!--                                                </h2>-->
-<!--                                                <p class="job">-->
-<!--                                                    Typhography Magister-->
-<!--                                                </p>-->
-<!--                                                <p class="company">-->
-<!--                                                    Florida University-->
-<!--                                                </p>-->
-<!--                                                <hr>-->
-<!--                                                <div class="text-detail">-->
-<!--                                                    <p>-->
-<!--                                                        Claritas est etiam processus dynamicus, qui sequitur mutationem-->
-<!--                                                        consuetudium lectorum. Mirum est notare quam littera gothica,-->
-<!--                                                        quam nunc putamus parum claram, anteposuerit litterarum formas-->
-<!--                                                        humanita per seacula quarta decima et quinta decima. Eodem modo-->
-<!--                                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes.-->
-<!--                                                    </p>-->
-<!--                                                </div>-->
-<!--                                            </div>-->
-<!--                                        </div>-->
-<!--                                    </div>-->
-<!--                                </li>-->
+                                <!--                                <li>-->
+                                <!--                                    <div class="col-md-6 col-sm-6">-->
+                                <!--                                        <div class="wrap-card">-->
+                                <!--                                            <div class="card">-->
+                                <!--                                                <h2 class="year">-->
+                                <!--                                                    2009 - 2010-->
+                                <!--                                                </h2>-->
+                                <!--                                                <p class="job">-->
+                                <!--                                                    Typhography Magister-->
+                                <!--                                                </p>-->
+                                <!--                                                <p class="company">-->
+                                <!--                                                    Florida University-->
+                                <!--                                                </p>-->
+                                <!--                                                <hr>-->
+                                <!--                                                <div class="text-detail">-->
+                                <!--                                                    <p>-->
+                                <!--                                                        Claritas est etiam processus dynamicus, qui sequitur mutationem-->
+                                <!--                                                        consuetudium lectorum. Mirum est notare quam littera gothica,-->
+                                <!--                                                        quam nunc putamus parum claram, anteposuerit litterarum formas-->
+                                <!--                                                        humanita per seacula quarta decima et quinta decima. Eodem modo-->
+                                <!--                                                        typi, qui nunc nobis videntur parum clari, fiant sollemnes.-->
+                                <!--                                                    </p>-->
+                                <!--                                                </div>-->
+                                <!--                                            </div>-->
+                                <!--                                        </div>-->
+                                <!--                                    </div>-->
+                                <!--                                </li>-->
                             </ul>
 
                         </div>
@@ -785,7 +790,7 @@
                                 <div class="wrap-article">
                                     <img alt="blog-1" class="img-circle text-center" src="/static/images/blog-1.png">
                                     <p class="subtitle fancy">
-                                        <span>{{ blog_info.blog_title }}</span>
+                                        <span>{{ blog_info.blog_date }}</span>
                                     </p>
                                     <a href="https://github.com/ifyangyiisyangyi/learnPython">
                                         <h3 class="title">

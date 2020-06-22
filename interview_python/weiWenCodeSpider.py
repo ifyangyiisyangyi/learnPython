@@ -23,6 +23,7 @@ def get_article_all():
     url_dict = {}
     for i in range(30):
         url = 'https://cloud.tencent.com/developer/column/5263/page-' + str(i)
+        print(f'爬取第{i + 1}页')
         url_sigle_dict = get_article_page(url)
         url_dict = dict(url_dict, **url_sigle_dict)
     return url_dict

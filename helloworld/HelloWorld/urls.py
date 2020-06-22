@@ -16,6 +16,7 @@ urlpatterns = [
     url(r'^gameResult', view.gameResult),
     url(r'^login/', view.login),
     url(r'^save_message', view.save_message),
+    url(r'^article_spider', view.article_spider),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
