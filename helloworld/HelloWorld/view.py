@@ -74,8 +74,23 @@ def gameResult(request):
 
 
 def login(request):
+    ip = get_user_ip(request)
+    print(ip)
+    print('********************************************')
     blog_info = model_to_dict(Blog.objects.get(id=1))
     return render(request, 'index.html', {'blog_info': blog_info})
+
+
+def get_user_ip(request):
+    """
+    获取访问用户ip
+    :param request:
+    :return:
+    """
+    if 'HTTP_X_FORWARDED_FOR' in request.META:
+        return request.META['HTTP_X_FORWARDED_FOR']
+    else:
+        return request.META['REMOTE_ADDR']
 
 
 def save_message(request):
