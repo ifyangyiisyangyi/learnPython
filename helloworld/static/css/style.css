@@ -482,7 +482,7 @@ p {
 
 /*----------------------------------------- 6) Hero --------------------------------------------------*/
 #home {
-  background: url('../images/hero1.jpeg');
+  background: url('../images/hero1.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -751,7 +751,7 @@ ul.portfolio-image li .desc{
 }
 /*---------- d. testimonial -----------*/
 #testimonial {
-  background-image: url(../images/testimonial-bg.jpg);
+  background-image: url(../images/testimonial-bg.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -889,7 +889,7 @@ ul.portfolio-image li .desc{
   width: 100%;
 }
 .bg-about {
-  background: url('../images/reza.jpg');
+  background: url('../images/yangyi.png');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

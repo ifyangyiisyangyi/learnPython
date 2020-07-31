@@ -75,8 +75,6 @@ def gameResult(request):
 
 def login(request):
     ip = get_user_ip(request)
-    print(ip)
-    print('********************************************')
     visitor = Vistor(ip=ip, user_agent="")
     try:
         visitor.save()
