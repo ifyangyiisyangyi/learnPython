@@ -75,7 +75,6 @@ def gameResult(request):
 
 def login(request):
     ip = get_user_ip(request)
-    print(request.META['SERVER_NAME'])
     if "HTTP_USER_AGENT" in request.META:
         user_agent = request.META['HTTP_USER_AGENT']
     else:
@@ -86,7 +85,7 @@ def login(request):
     except:
         print("写入数据异常")
     try:
-        blog_info = model_to_dict(Blog.objects.get(id=2))
+        blog_info = model_to_dict(Blog.objects.get(id=1))
         print(blog_info)
     except:
         blog_info = {'id': 1, 'blog_title': '点我跳转至github', 'blog_content': "test"}

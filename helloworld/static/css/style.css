@@ -66,6 +66,7 @@ img { max-width: 100%; }
 	overflow:hidden;
 }
 /*----------------------------------------- 2) Preloader --------------------------------------------------*/
+/*
 #preloader {
   position: fixed;
   top: 0;
@@ -91,7 +92,7 @@ img { max-width: 100%; }
   text-align: center;
   margin-top: -80px;
 }
-
+*/
 /*----------------------------------------- 3) Helper --------------------------------------------------*/
 .no-pad {padding: 0 !important; margin: 0 !important;}
 .pad-80 {padding-top: 80px;}
