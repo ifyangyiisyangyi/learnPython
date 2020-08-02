@@ -75,16 +75,21 @@ def gameResult(request):
 
 def login(request):
     ip = get_user_ip(request)
-    visitor = Vistor(ip=ip, user_agent="")
+    print(request.META['SERVER_NAME'])
+    if "HTTP_USER_AGENT" in request.META:
+        user_agent = request.META['HTTP_USER_AGENT']
+    else:
+        user_agent = ""
+    visitor = Vistor(ip=ip, user_agent=user_agent)
     try:
         visitor.save()
     except:
         print("写入数据异常")
     try:
-        blog_info = model_to_dict(Blog.objects.get(id=1))
+        blog_info = model_to_dict(Blog.objects.get(id=2))
         print(blog_info)
     except:
-        blog_info = {'id': 1, 'blog_title': '点我跳转至github', 'blog_content': '测试测试测试'}
+        blog_info = {'id': 1, 'blog_title': '点我跳转至github', 'blog_content': "test"}
     return render(request, 'index.html', {'blog_info': blog_info})
 
 
