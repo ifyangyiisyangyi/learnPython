@@ -1,11 +1,12 @@
-from django.forms import model_to_dict
-from django.http import HttpResponse, JsonResponse
-from django.shortcuts import render
-from TestModel.models import User, Message, Blog, Article, Vistor
 import random
+
 import requests
 from bs4 import BeautifulSoup
-import json
+from django.forms import model_to_dict
+from django.http import HttpResponse
+from django.shortcuts import render
+
+from TestModel.models import User, Message, Blog, Article, Vistor
 
 
 def show_404(request):
@@ -75,8 +76,9 @@ def gameResult(request):
 
 def login(request):
     ip = get_user_ip(request)
-    # ip = '223.70.230.166'
-    url = f"http://www.ip-api.com/json/{ip}"
+    # url = 'http://ip.ws.126.net/ipquery?ip=223.10.136.26'
+    url = f"http://www.ip-api.com/json/{ip}?lang=zh-CN"
+    user_agent = ""
     country = ""
     city = ""
     ip_as = ""
@@ -87,35 +89,37 @@ def login(request):
         try:
             res = requests.get(url)
             ip_message = res.json()
+            if "HTTP_USER_AGENT" in request.META:
+                user_agent = request.META['HTTP_USER_AGENT']
+            else:
+                user_agent = ""
 
             if ip_message.get('status') == 'success':
                 country = ip_message.get('country')
                 city = ip_message.get('city')
                 ip_as = ip_message.get('as')
                 isp = ip_message.get('isp')
-
             elif ip_message.get('status') == 'fail':
-
                 print("请求失败")
             else:
                 pass
         except:
             print("获取ip信息异常")
-    if "HTTP_USER_AGENT" in request.META:
-        user_agent = request.META['HTTP_USER_AGENT']
-    else:
-        user_agent = ""
-    visitor = Vistor(ip=ip, user_agent=user_agent, country=country, city=city, ip_as=ip_as, isp=isp)
-    try:
-        visitor.save()
-    except:
-        print("写入数据异常")
+        visitor = Vistor(ip=ip, user_agent=user_agent, country=country, city=city, ip_as=ip_as, isp=isp)
+        try:
+            visitor.save()
+        except:
+            print("写入数据异常")
     try:
         blog_info = model_to_dict(Blog.objects.get(id=1))
         print(blog_info)
     except:
         blog_info = {'id': 1, 'blog_title': '点我跳转至github', 'blog_content': "test"}
-    return render(request, 'index.html', {'blog_info': blog_info})
+    try:
+        count = Vistor.objects.filter().count()
+    except:
+        count = "数据异常"
+    return render(request, 'index.html', {'blog_info': blog_info, 'count': count})
 
 
 def get_user_ip(request):
