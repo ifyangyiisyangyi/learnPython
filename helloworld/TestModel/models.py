@@ -45,6 +45,10 @@ class Vistor(models.Model):
     '''访问者'''
     ip = models.CharField(verbose_name="访问ip", max_length=300)
     user_agent = models.CharField(verbose_name="user_agent", max_length=300, blank=True)
+    country = models.CharField(verbose_name="user_agent", max_length=300, blank=True)
+    city = models.CharField(verbose_name="user_agent", max_length=300, blank=True)
+    ip_as = models.CharField(verbose_name="user_agent", max_length=300, blank=True)
+    isp = models.CharField(verbose_name="user_agent", max_length=300, blank=True)
     count = models.IntegerField(verbose_name="访问次数", default=0)
     create_time = models.DateTimeField(verbose_name="创建时间", auto_now_add=True)
     update_time = models.DateTimeField(verbose_name="更新时间", auto_now_add=True)

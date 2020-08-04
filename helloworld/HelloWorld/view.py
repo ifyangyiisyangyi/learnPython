@@ -75,11 +75,37 @@ def gameResult(request):
 
 def login(request):
     ip = get_user_ip(request)
+    # ip = '223.70.230.166'
+    url = f"http://www.ip-api.com/json/{ip}"
+    country = ""
+    city = ""
+    ip_as = ""
+    isp = ""
+    if ip == '127.0.0.1':
+        print("本地请求")
+    else:
+        try:
+            res = requests.get(url)
+            ip_message = res.json()
+
+            if ip_message.get('status') == 'success':
+                country = ip_message.get('country')
+                city = ip_message.get('city')
+                ip_as = ip_message.get('as')
+                isp = ip_message.get('isp')
+
+            elif ip_message.get('status') == 'fail':
+
+                print("请求失败")
+            else:
+                pass
+        except:
+            print("获取ip信息异常")
     if "HTTP_USER_AGENT" in request.META:
         user_agent = request.META['HTTP_USER_AGENT']
     else:
         user_agent = ""
-    visitor = Vistor(ip=ip, user_agent=user_agent)
+    visitor = Vistor(ip=ip, user_agent=user_agent, country=country, city=city, ip_as=ip_as, isp=isp)
     try:
         visitor.save()
     except:
