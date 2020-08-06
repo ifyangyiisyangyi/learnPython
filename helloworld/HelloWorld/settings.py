@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',  # 消息框架
     'django.contrib.staticfiles',  # 管理静态文件框架
     'TestModel',
-    'django-crontab',  # 定时任务
+    'django_crontab',  # 定时任务
 ]
 
 CRONJOBS = [
