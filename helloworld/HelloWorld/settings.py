@@ -1,5 +1,3 @@
-
-
 # -*-coding:UTF-8-*-
 
 import os
@@ -28,6 +26,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',  # 消息框架
     'django.contrib.staticfiles',  # 管理静态文件框架
     'TestModel',
+    'django-crontab',  # 定时任务
+]
+
+CRONJOBS = [
+    ('*/1 * * * *', 'myjob.cron.send_email')
 ]
 
 MIDDLEWARE = [
@@ -123,7 +126,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 EMAIL_HOST = 'smtp.163.com'
 # 设置端口号，为数字
 EMAIL_PORT = 25
-#设置发件人邮箱
+# 设置发件人邮箱
 EMAIL_HOST_USER = 'ifyangyiisyangyi@163.com'
 # 设置发件人 授权码
 # EMAIL_HOST_PASSWORD = 'GFNQCVOPTIYDZDUG'
