@@ -118,3 +118,15 @@ USE_TZ = False
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+
+# 设置邮件域名
+EMAIL_HOST = 'smtp.163.com'
+# 设置端口号，为数字
+EMAIL_PORT = 25
+#设置发件人邮箱
+EMAIL_HOST_USER = 'ifyangyiisyangyi@163.com'
+# 设置发件人 授权码
+# EMAIL_HOST_PASSWORD = 'GFNQCVOPTIYDZDUG'
+EMAIL_HOST_PASSWORD = 'ITTHCLZPGLOXEUIN'
+# 设置是否启用安全链接
+EMAIL_USER_TLS = True

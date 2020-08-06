@@ -1,12 +1,12 @@
 import random
-
 import requests
 from bs4 import BeautifulSoup
 from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.shortcuts import render
-
 from TestModel.models import User, Message, Blog, Article, Vistor
+from django.core.mail import send_mail
+import time
 
 
 def show_404(request):
@@ -144,7 +144,10 @@ def save_message(request):
                         email=email,
                         message=message
                         )
-        test1.save()
+        try:
+            test1.save()
+        except:
+            print("message save exception")
     return render(request, 'index.html')
 
 
@@ -173,3 +176,12 @@ def article_spider(request):
         url_sigle_dict = get_article_page(url)
         url_dict = dict(url_dict, **url_sigle_dict)
     return HttpResponse(url_dict)
+
+
+def send_email():
+    for i in range(10):
+        print("发送次数 :" + str(i))
+        time.sleep(3)
+        res = send_mail('good afternoon my neighbour', "基友拍了拍我开始摇尾巴" + str(i), 'ifyangyiisyangyi@163.com',
+                        ['122342748@qq.com'])
+    print(res)
