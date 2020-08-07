@@ -17,6 +17,7 @@ class User(models.Model):
 
 class Message(models.Model):
     '''留言表'''
+    ip = models.CharField(max_length=300, blank=True)
     name = models.CharField(max_length=300)
     email = models.CharField(max_length=300)
     message = models.CharField(max_length=300)

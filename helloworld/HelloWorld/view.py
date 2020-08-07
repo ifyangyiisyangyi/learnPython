@@ -1,81 +1,16 @@
-import random
 import requests
 from bs4 import BeautifulSoup
 from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.shortcuts import render
 from TestModel.models import User, Message, Blog, Article, Vistor
-from django.core.mail import send_mail
-import time
 
 
 def show_404(request):
     return render(request, '404.html')
 
 
-def hello(request):
-    data = User.objects.all()
-    data1 = []
-    for i in data:
-        data1.append(i.user_name)
-    return render(request, 'base.html', {'data': data1})
-
-
-# 测试QQ号访问页面
-def test_qq(request):
-    '''请求页面'''
-    return render(request, 'get_demo.html')
-
-
-# 提交后返回页面
-def result_qq(request):
-    '''返回结果'''
-    if request.method == 'GET':
-        # 获取提交的数据
-        r = request.GET["q"]  # key就是前面输入框里的name属性对应值name="q"
-        return HttpResponse("测试结果：%s" % r)
-    else:
-        render(request, 'get_demo.html')
-
-
-def user(request):
-    '''请求页面-返回结果'''
-    res = ""
-    if request.method == 'GET':
-        n = request.GET.get('name', None)  # key不存在时不会报错
-        res = User.objects.filter(user_name="%s" % n)
-        try:
-            res = res[0].user_mail
-        except:
-            res = "未查询到数据"
-        return render(request, 'get_email.html', {'email': res})
-    else:
-        return render(request, 'get_email.html', {'email': res})
-
-
-def game(request):
-    return render(request, 'game.html')
-
-
-def gameResult(request):
-    random_num = random.randint(0, 3)
-    '''返回结果'''
-    if request.method == 'GET':
-        # 获取提交的数据
-        num = int(request.GET["number"])
-        if num < random_num:
-            result = 'too small'
-            return render(request, 'game.html', {'result': result})
-        elif num > random_num:
-            result = 'too large'
-            return render(request, 'game.html', {'result': result})
-        else:
-            result = 'bingo'
-            return render(request, 'game.html', {'result': result})
-
-
 def login(request):
-    send_email()
     ip = get_user_ip(request)
     # url = 'http://ip.ws.126.net/ipquery?ip=223.10.136.26'
     url = f"http://www.ip-api.com/json/{ip}?lang=zh-CN"
@@ -136,12 +71,14 @@ def get_user_ip(request):
 
 
 def save_message(request):
+    ip = get_user_ip(request)
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        test1 = Message(name=name,
+        test1 = Message(ip = ip,
+                        name=name,
                         email=email,
                         message=message
                         )
@@ -177,14 +114,3 @@ def article_spider(request):
         url_sigle_dict = get_article_page(url)
         url_dict = dict(url_dict, **url_sigle_dict)
     return HttpResponse(url_dict)
-
-
-def send_email():
-    for i in range(1):
-        print("发送次数 :" + str(i))
-        time.sleep(3)
-        res = send_mail('good afternoon my neighbour', "基友拍了拍我开始摇尾巴" + str(i), '117645743@qq.com',
-                        ['ifyangyiisyangyi@163.com'])
-    print(res)
-
-
