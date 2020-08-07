@@ -30,7 +30,7 @@ INSTALLED_APPS = [
 ]
 
 CRONJOBS = [
-    ('*/1 * * * *', 'myjob.cron.send_email')
+    ('*/1 * * * *', 'HelloWorld.cron.send_email')
 ]
 
 MIDDLEWARE = [
