@@ -30,7 +30,7 @@ INSTALLED_APPS = [
 ]
 
 CRONJOBS = [
-    ('*/1 * * * *', 'myjob.cron.job_test')
+    ('*/1 * * * *', 'myjob.cron.send_email')
 ]
 
 MIDDLEWARE = [
@@ -123,13 +123,14 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # 设置邮件域名
-EMAIL_HOST = 'smtp.163.com'
+EMAIL_HOST = 'smtp.qq.com'
 # 设置端口号，为数字
-EMAIL_PORT = 25
+EMAIL_PORT = 587
 # 设置发件人邮箱
-EMAIL_HOST_USER = 'ifyangyiisyangyi@163.com'
+EMAIL_HOST_USER = '117645743@qq.com'
 # 设置发件人 授权码
 # EMAIL_HOST_PASSWORD = 'GFNQCVOPTIYDZDUG'
-EMAIL_HOST_PASSWORD = 'ITTHCLZPGLOXEUIN'
+# EMAIL_HOST_PASSWORD = 'ITTHCLZPGLOXEUIN'
+EMAIL_HOST_PASSWORD = 'bziqbvpjtotzbhbi'
 # 设置是否启用安全链接
 EMAIL_USER_TLS = True
