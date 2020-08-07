@@ -75,7 +75,7 @@ def gameResult(request):
 
 
 def login(request):
-    send_email()
+    # send_email()
     ip = get_user_ip(request)
     # url = 'http://ip.ws.126.net/ipquery?ip=223.10.136.26'
     url = f"http://www.ip-api.com/json/{ip}?lang=zh-CN"
@@ -186,3 +186,6 @@ def send_email():
         res = send_mail('good afternoon my neighbour', "基友拍了拍我开始摇尾巴" + str(i), 'ifyangyiisyangyi@163.com',
                         ['117645743@qq.com'])
     print(res)
+
+def job_test():
+    print('*********')
