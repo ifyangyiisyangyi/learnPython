@@ -3,7 +3,8 @@ from bs4 import BeautifulSoup
 from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.shortcuts import render
-from TestModel.models import User, Message, Blog, Article, Vistor
+from TestModel.models import Message, Blog, Article, Vistor
+from django.http import HttpResponseRedirect
 
 
 def show_404(request):
@@ -71,13 +72,18 @@ def get_user_ip(request):
 
 
 def save_message(request):
+    '''
+    发送联系人信息后回到主页
+    :param request:
+    :return: 返回主页
+    '''
     ip = get_user_ip(request)
     if request.method == "POST":
         name = request.POST.get("name")
         email = request.POST.get('email')
         message = request.POST.get('message')
 
-        test1 = Message(ip = ip,
+        test1 = Message(ip=ip,
                         name=name,
                         email=email,
                         message=message
@@ -85,8 +91,8 @@ def save_message(request):
         try:
             test1.save()
         except:
-            print("message save exception")
-    return render(request, 'index.html')
+            print("保存数据异常")
+    return HttpResponseRedirect('/login')
 
 
 def get_article_page(url):
