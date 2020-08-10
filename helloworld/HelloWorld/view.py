@@ -51,7 +51,7 @@ def login(request):
         blog_info = model_to_dict(Blog.objects.get(id=1))
         print(blog_info)
     except:
-        blog_info = {'id': 1, 'blog_title': '点我跳转至github', 'blog_content': "test"}
+        blog_info = {'id': 1, 'blog_date': '2020-08-10', 'blog_title': '点我跳转至github', 'blog_content': "test"}
     try:
         count = Vistor.objects.filter().count()
     except:

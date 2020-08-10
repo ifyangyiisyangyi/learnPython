@@ -71,7 +71,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'djangoblog',
         'USER': 'root',
-        'PASSWORD': '123',
+        'PASSWORD': 'xxx',
         'HOST': '39.100.27.239',
         'PORT': '3306',
         'Test': {
@@ -129,8 +129,6 @@ EMAIL_PORT = 587
 # 设置发件人邮箱
 EMAIL_HOST_USER = '117645743@qq.com'
 # 设置发件人 授权码
-# EMAIL_HOST_PASSWORD = 'GFNQCVOPTIYDZDUG'
-# EMAIL_HOST_PASSWORD = 'ITTHCLZPGLOXEUIN'
-EMAIL_HOST_PASSWORD = 'bziqbvpjtotzbhbi'
+EMAIL_HOST_PASSWORD = 'xxxxx'
 # 设置是否启用安全链接
 EMAIL_USER_TLS = True

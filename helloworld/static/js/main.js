@@ -90,7 +90,7 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["我叫杨毅", "我是一名测试工程师", "我和BUG势不两立"],
+        strings: ["123", "12345", "1234567"],
         typeSpeed: 100,
         backDelay: 900,
         // loop
