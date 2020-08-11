@@ -26,9 +26,6 @@ def login(request):
         print("本地请求")
     else:
         try:
-            mail = send_mail(f'访问者IP:{ip}', f'访问者地址:{city}', '117645743@qq.com',
-                            ['937471204@qq.com'])
-            print(mail)
             res = requests.get(url)
             ip_message = res.json()
             if "HTTP_USER_AGENT" in request.META:
@@ -47,9 +44,10 @@ def login(request):
                 pass
         except:
             print("获取ip信息异常")
-        visitor = Vistor(ip=ip, user_agent=user_agent, country=country, city=city, ip_as=ip_as, isp=isp)
+            visitor = Vistor(ip=ip, user_agent=user_agent, country=country, city=city, ip_as=ip_as, isp=isp)
         try:
             visitor.save()
+            send_mail(f'访问者IP:{ip}', f'访问者地址:{city}', '117645743@qq.com', ['937471204@qq.com'])
         except:
             print("写入数据异常")
     try:
