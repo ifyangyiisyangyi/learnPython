@@ -5,6 +5,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from TestModel.models import Message, Blog, Article, Vistor
 from django.http import HttpResponseRedirect
+from django.core.mail import send_mail
 
 
 def show_404(request):
@@ -12,6 +13,7 @@ def show_404(request):
 
 
 def login(request):
+
     ip = get_user_ip(request)
     # url = 'http://ip.ws.126.net/ipquery?ip=223.10.136.26'
     url = f"http://www.ip-api.com/json/{ip}?lang=zh-CN"
@@ -20,10 +22,13 @@ def login(request):
     city = ""
     ip_as = ""
     isp = ""
-    if ip == '127.0.0.1':
+    if ip == '127.0.0.1' or ip == '223.104.3.25' or ip == '223.70.230.166':
         print("本地请求")
     else:
         try:
+            mail = send_mail(f'访问者IP:{ip}', f'访问者地址:{city}', '117645743@qq.com',
+                            ['937471204@qq.com'])
+            print(mail)
             res = requests.get(url)
             ip_message = res.json()
             if "HTTP_USER_AGENT" in request.META:
