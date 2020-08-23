@@ -1,5 +1,6 @@
+
 import requests
-from bs4 import BeautifulSoup
+from django.core.paginator import Paginator, PageNotAnInteger, InvalidPage, EmptyPage
 from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.shortcuts import render
@@ -97,28 +98,29 @@ def save_message(request):
     return HttpResponseRedirect('/login')
 
 
-def get_article_page(url):
-    r = requests.request('get', url=url)
-    html = r.text
-    soup = BeautifulSoup(html, 'lxml')
-    ls = soup('h3', class_="com-article-panel-title")
-    url_dict = {}
-    for tag in ls:
-        s = 'https://cloud.tencent.com' + tag.a['href']
-        title = tag.a.string
-        article = Article(title=title,
-                          linkage=s,
-                          tag="python")
-        article.save()
-        url_dict[title] = s  # 返回文章的标题和链接
-    return url_dict
+def article_show(request):
+    """
+    :param request:
+    :return: 分页显示文章内容
+    """
+    article_obj = Article.objects.all()[0:300]  # 获取文章表里所有数据
+    article_list = []
+    for i in article_obj:
+        article_list.append(i)
+    paginator = Paginator(article_list, 20)  # 实例化Paginator，每页显示10条数据
+    if request.method == "GET":
+        page = request.GET.get('page')  # 获取 url 后面的 page 参数的值, 首页不显示 page 参数, 默认值是 1
+        try:
+            articles = paginator.page(page)
+        # todo: 注意捕获异常
+        except PageNotAnInteger:
+            # 如果请求的页数不是整数, 返回第一页。
+            articles = paginator.page(1)
+        except InvalidPage:
+            # 如果请求的页数不存在, 重定向页面
+            return HttpResponse('找不到页面的内容')
+        except EmptyPage:
+            # 如果请求的页数不在合法的页数范围内，返回结果的最后一页。
+            articles = paginator.page(paginator.num_pages)
 
-
-def article_spider(request):
-    url_dict = {}
-    for i in range(30):
-        url = 'https://cloud.tencent.com/developer/column/5263/page-' + str(i)
-        print(f'爬取第{i + 1}页')
-        url_sigle_dict = get_article_page(url)
-        url_dict = dict(url_dict, **url_sigle_dict)
-    return HttpResponse(url_dict)
+    return render(request, 'article_show.html', {'articles': articles})

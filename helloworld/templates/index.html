@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>杨毅的主页</title>
+    <title>yycode-Django</title>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="杨毅 - 测试工程师" name="description">
@@ -21,18 +21,23 @@
 </head>
 <body>
 <!--加载图-->
-<!--<div id="preloader">-->
-<!--    <div id="status">-->
-<!--    </div>-->
-<!--</div>-->
+<div id="preloader">
+    <div id="status">
+    </div>
+</div>
 <!--/.加载图 END-->
 
 <!--HEADER -->
 <div class="header">
     <div class="for-sticky">
         <!--LOGO-->
-        <div class="col-md-2 col-xs-6 logo">
-            <a href="/"><img alt="logo" class="logo-nav" src="/static/images/logo.png"></a>
+        <!--        <div class="col-md-2 col-xs-3 logo">-->
+        <!--            <a href="/article_show" target="_blank"><img alt="logo" class="logo-nav" src="/static/images/logo.png"></a>-->
+        <!--        </div>-->
+        <div class="col-md-3 col-xs-3 logo">
+            <a href="/">
+                <strong>yycode</strong>
+            </a>
         </div>
         <!--/.LOGO END-->
     </div>
@@ -45,21 +50,12 @@
                 <a data-scroll="" href="#about">
                     <span>个人签名</span>
                 </a>
-                <!--                <a data-scroll="" href="#work">-->
-                <!--                    <span>相册</span>-->
-                </a>
-                </a>
-                <!--                <a data-scroll="" href="#employement">-->
-                <!--                    <span>工作经历</span>-->
-                </a>
+
                 <a data-scroll="" href="#skill">
                     <span>专业技能</span>
                 </a>
-                <!--                <a data-scroll="" href="#education">-->
-                <!--                    <span>教育经历</span>-->
-                </a>
                 <a data-scroll="" href="#testimonial">
-                    <span>Testimonial</span>
+                    <span>轮播图</span>
                 </a>
                 <a data-scroll="" href="#blog">
                     <span>个人博客</span>
@@ -67,10 +63,9 @@
                 <a data-scroll="" href="#contact">
                     <span>联系我</span>
                 </a>
-
             </div>
         </nav>
-        <button class="close-button" id="close-button">Close Menu</button>
+        <button class="close-button" id="close-button">菜单</button>
     </div>
     <button class="menu-button" id="open-button">
         <span></span>
@@ -90,12 +85,10 @@
                 <div class="row">
                     <div class="wrap-hero-content">
                         <div class="hero-content">
-                            <!--                            <i style="color:#BDBDBD">杨毅的主页</i>-->
-                            <!--                            <br>-->
                             <span class="typed"></span>
                         </div>
                     </div>
-                    <div class="mouse-icon margin-20">
+                    <div class="mouse-icon margin-10">
                         <div class="scroll"></div>
                     </div>
                 </div>
@@ -136,7 +129,7 @@
                                             <tr>
                                                 <td class="title">电话</td>
                                                 <td class="break">:</td>
-                                                <td> +86 18859285396</td>
+                                                <td> +86 188****5396</td>
                                             </tr>
                                             <tr>
                                                 <td class="title">Email</td>
@@ -292,7 +285,7 @@
                                     <p class="subtitle fancy">
                                         <span>{{ blog_info.blog_date }}</span>
                                     </p>
-                                    <a href="https://github.com/ifyangyiisyangyi/learnPython">
+                                    <a href="article_show/" target="_blank">
                                         <h3 class="title">
                                             {{ blog_info.blog_title }}
                                         </h3>
@@ -366,18 +359,18 @@
             <!--                    <div class="row">-->
             <!--                        <img src="/static/images/logo-bottom.png" alt="logo bottom" class="center-block"/><a target="_blank"-->
             <!--                                                                        href="https://github.com/ifyangyiisyangyi/learnPython">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>-->
-            <p class="pull-right" style="font-size: 26px;">
-                <a href="/" data-scroll=""
-                   style="cursor: pointer; background-color: rgb(58, 135, 173); color: rgb(255, 255, 255); padding: 1px 3px 2px; font-size: 9.75px;"><span>back to top</span></a>
 
-                <br>
-                <br>
-            </p>
-            <a>访问量:{{ count }}</a>
             <!--                    </div>-->
             <!--                </div>-->
             <!--            </div>-->
         </footer>
+        <div>
+            <a>访问量:{{ count }}</a>
+            <p class="pull-right" style="font-size: 10px;">
+                <a href="/" data-scroll=""
+                   style="cursor: pointer; background-color: rgb(58, 135, 173); color: rgb(255, 255, 255); padding: 1px 3px 2px; font-size: 9.75px;"><span>back to top</span></a>
+            </p>
+        </div>
         <!--/.FOOTER-END-->
 
         <!--/.CONTENT END-->

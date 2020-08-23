@@ -1,6 +1,6 @@
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.conf.urls import url
-from . import testdb, view
+from . import testdb, view, spider
 from django.contrib import admin
 
 urlpatterns = [
@@ -9,7 +9,8 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     # url(r'^login/', view.login),
     url(r'^save_message', view.save_message),
-    url(r'^article_spider', view.article_spider),
+    url(r'^article_spider', spider.article_spider),
+    url(r'^article_show/', view.article_show, name='article_show')
 ]
 
 urlpatterns += staticfiles_urlpatterns()
