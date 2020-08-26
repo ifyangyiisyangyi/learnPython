@@ -10,7 +10,8 @@ urlpatterns = [
     # url(r'^login/', view.login),
     url(r'^save_message', view.save_message),
     url(r'^article_spider', spider.article_spider),
-    url(r'^article_show/', view.article_show, name='article_show')
+    url(r'^article_show/', view.article_show, name='article_show'),
+    url(r'^test/', view.test, name='test'),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

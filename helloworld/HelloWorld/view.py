@@ -124,3 +124,6 @@ def article_show(request):
             articles = paginator.page(paginator.num_pages)
 
     return render(request, 'article_show.html', {'articles': articles})
+
+def test(request):
+    return render(request, 'home.html')
