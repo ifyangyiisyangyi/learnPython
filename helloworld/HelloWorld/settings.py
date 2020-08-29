@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!i!tuq9+qx9m37fo!%$n=!&&jy!hupziefr5b9el!3f3k)$o60'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -116,11 +116,10 @@ USE_L10N = True
 # USE_TZ = True
 USE_TZ = False
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.0/howto/static-files/
+
 
 STATIC_URL = '/static/'
-
+STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
 
 # 设置邮件域名
@@ -134,4 +133,3 @@ EMAIL_HOST_PASSWORD = 'bziqbvpjtotzbhbi'
 # 设置是否启用安全链接
 EMAIL_USER_TLS = True
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'static_dist')
