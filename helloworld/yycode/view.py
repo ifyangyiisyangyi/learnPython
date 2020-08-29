@@ -95,7 +95,7 @@ def save_message(request):
             test1.save()
         except:
             print("保存数据异常")
-    return HttpResponseRedirect('/login')
+    return HttpResponseRedirect('/')
 
 
 def article_show(request):
