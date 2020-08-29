@@ -16,7 +16,7 @@ services:
       - "80:8000"
     volumes:
       - static-volume:/code/collected_static
-      - ./config/nginx:/etc/nginx/conf.d
+      - ./conf/nginx:/etc/nginx/conf.d
     depends_on:
       - app
 volumes:
