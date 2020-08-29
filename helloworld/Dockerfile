@@ -9,6 +9,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian/ buster-backports main contrib n
 deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main contrib non-free\
     > /etc/apt/sources.list
 
+
 RUN mkdir /code
 WORKDIR /code
 # 添加 pip 清华镜像源
