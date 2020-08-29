@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="http://img.soogif.com/ChyENLCrXxZVZgi43EDS7tHBnAZvQM5S.gif_s400x0"/>
+  <img src="http://img.soogif.com/ChyENLCrXxZVZgi43EDS7tHBnAZvQM5S.gif"/>
 </p>
 
 
