@@ -3,7 +3,7 @@
 </p>
 
 
-# learnPython
+# learnPython [![image](https://img.shields.io/redmine/plugin/stars/redmine_xlsx_format_issue_exporter.svg)](https://github.com/ifyangyiisyangyi)
 
 
 [1. pytest框架学习](https://github.com/ifyangyiisyangyi/learnPython/tree/master/luka_api_test)
