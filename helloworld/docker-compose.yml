@@ -3,8 +3,19 @@ services:
   app:
     restart: always #除正常工作外，容器会在任何时候重启，比如遭遇 bug、进程崩溃、docker 重启等情况
     build: .  # 指定一个包含 Dockerfile 的路径，并通过此 Dockerfile 来构建容器镜像。"."代表当前目录
-    command: "python3 manage.py runserver 0.0.0.0:8000"
+    command: bash -c "python3 manage.py collectstatic --no-input && python3 manage.py migrate && gunicorn --timeout=30 --workers=4 --bind :8000 yycode.wsgi:application"
     volumes:
       - .:/code # 卷，这是个很重要的概念。前面说过容器是和宿主机完全隔离的，但是有些时候又需要将其连通；比如我们开发的 Django 项目代码常常会更新，并且更新时还依赖如 Git 之类的程序，在容器里操作就显得不太方便。所以就有卷，它定义了宿主机和容器之间的映射："." 表示宿主机的当前目录，":" 为分隔符，"/code" 表示容器中的目录。即宿主机当前目录和容器的 /code 目录是连通的，宿主机当前目录的 Django 代码更新时，容器中的 /code 目录中的代码也相应的更新了。这有点儿像是在容器上打了一个洞，某种程度上也是实用性和隔离性的一种妥协
+      - static-volume:/code/collected_static
     ports:
       - "8000:8000" #将宿主机的 8000 端口映射到容器的 8000 端口
+  nginx:
+    restart: always
+    image: nginx:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - static-volume:/code/collected_static
+      - ./config/nginx:/etc/nginx/conf.d
+    depends_on:
+      - app
