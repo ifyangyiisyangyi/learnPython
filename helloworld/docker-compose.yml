@@ -3,7 +3,7 @@ services:
   app:
     restart: always
     build: .  # '点'代表当前目录
-    command: bash -c "python3 manage.py collectstatic --no-input && gunicorn --timeout=30 --workers=4 --bind :8000 HelloWorld.wsgi:application"
+    command: bash -c "python3 manage.py collectstatic --no-input && gunicorn --timeout=30 --workers=4 --bind :8000 yycode.wsgi:application"
     volumes:
       - .:/code
       - static-volume:/code/collected_static
