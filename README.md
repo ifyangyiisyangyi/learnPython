@@ -3,7 +3,7 @@
 </p>
 
 
-# learnPython [![image](https://img.shields.io/badge/Status-up-brightgreen)](https://github.com/ifyangyiisyangyi)
+# learnPython
 
 
 [1. pytest框架学习](https://github.com/ifyangyiisyangyi/learnPython/tree/master/luka_api_test)
