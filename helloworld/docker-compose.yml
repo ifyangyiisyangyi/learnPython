@@ -13,9 +13,11 @@ services:
     restart: always
     image: nginx:latest
     ports:
-      - "8000:8000"
+      - "80:8000"
     volumes:
       - static-volume:/code/collected_static
       - ./config/nginx:/etc/nginx/conf.d
     depends_on:
       - app
+volumes:
+  static-volume:
