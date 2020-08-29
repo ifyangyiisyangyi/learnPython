@@ -133,3 +133,5 @@ EMAIL_HOST_USER = '117645743@qq.com'
 EMAIL_HOST_PASSWORD = 'bziqbvpjtotzbhbi'
 # 设置是否启用安全链接
 EMAIL_USER_TLS = True
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_dist')
