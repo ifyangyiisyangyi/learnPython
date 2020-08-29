@@ -14,7 +14,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/debian-security buster/updates main con
 
 # 添加 pip 清华镜像源
 RUN pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
-ADD requirements.txt /code/
 # 添加 pip 清华镜像源
 RUN pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
 
