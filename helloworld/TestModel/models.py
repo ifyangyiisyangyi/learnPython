@@ -3,6 +3,7 @@
 from django.db import models
 
 
+
 class User(models.Model):
     '''注册表'''
     user_name = models.CharField(max_length=300)
@@ -28,7 +29,7 @@ class Message(models.Model):
 class Blog(models.Model):
     '''博客表'''
     blog_title = models.CharField(max_length=300)
-    blog_content = models.TextField(max_length=300)
+    blog_content = models.TextField()
     create_time = models.DateTimeField(verbose_name="创建时间", auto_now_add=True)
     update_time = models.DateTimeField(verbose_name="更新时间", auto_now_add=True)
 

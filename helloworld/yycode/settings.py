@@ -12,7 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!i!tuq9+qx9m37fo!%$n=!&&jy!hupziefr5b9el!3f3k)$o60'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -26,6 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',  # 消息框架
     'django.contrib.staticfiles',  # 管理静态文件框架
     'TestModel',
+    'article', # 文章管理app
     'django_crontab',  # 定时任务
 ]
 
