@@ -2,15 +2,66 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <title>yycode-Django</title>
 </head>
 <body>
 {% include 'nav.html'%}
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+            <div class="well">
+                <button class="btn btn-block btn-danger">Delete</button>
+                <div>
+                    <a class="pb-2 active">
+                        <i class="fa fa-bars mr-1"></i>时间排序
+                    </a>
+                    <a class="pb-2 ml-4">
+                        <i class="fa fa-fire mr-1"></i>热度排序
+                    </a>
+                </div>
+                <div class="summary-list">
+                    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+                        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+                            <a href="#" target="_blank">
+                                <img class="w-100 article-img" src="/static/images/bw-0.png">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <div class="text-muted mb-2 f-12">hhhhhhhh</div>
+                            <h2>
+                                <a>使用 setup.py 将 Python 库打包分发到 PyPI 踩坑指南</a>
+                            </h2>
+                            <p>
+                            <p>前段时间写了一个 django 的应用安装包打包上传到了 PyPI，由于是第一次打包分发，所以趁机研究了一下 Python
+                                打包的相关注意事项。网上的确是可以搜到很多相关资料，但是我发现很多人都在无脑复制粘贴或者简单的提供了一份打包配置，一点不实际也不实用，而</p>
+                            </p>
+                            <div class="text-muted mb-0 f-12">
+                                <a>
+                                    <i class="fa fa-book mr-1"></i>python实战
+                                </a>
+                                <span>
+                                    <i class="fa fa-eye ml-2 mr-1"></i>415
+                                </span>
+                                <a>
+                                    <i class="fa fa-comments ml-2 mr-1"></i>12
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="well">
+                <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+
+    </div>
+</div>
 </body>
 </html>
