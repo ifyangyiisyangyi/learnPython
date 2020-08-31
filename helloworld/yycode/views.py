@@ -22,7 +22,7 @@ def login(request):
     city = ""
     ip_as = ""
     isp = ""
-    if ip == '127.0.0.1' or ip == '223.104.3.25' or ip == '223.70.230.166' or ip == '117.136.0.218' or ip == '114.240.132.162':
+    if ip == '127.0.0.1':
         print("本地请求")
     else:
         try:
@@ -125,5 +125,4 @@ def article_show(request):
 
     return render(request, 'article_show.html', {'articles': articles})
 
-def test(request):
-    return render(request, 'home.html')
+
