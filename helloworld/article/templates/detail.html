@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% block base_content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-10">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-white border-0 rounded-0 mb-2 py-2 f-15">
+                    <li class="breadcrumb-item">
+                        <i class="fa fa-home mr-1"></i><a href="#">首页</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="#">文章分类</a>
+                    </li>
+                    <li class="breadcrumb-item active d-none d-md-block" aria-current="page">文章标题</li>
+                    <li class="breadcrumb-item active d-md-none" aria-current="page">当前位置</li>
+                </ol>
+            </nav>
+            <div class="card rounded-0 border-0" id="article">
+                <div class="card-body px-2 px-md-3 pb-0">
+                    <h1 class="card-title text-center font-weight-bold text-info">文章标题</h1>
+                    <hr>
+                    <div class="text-center f-13">
+                        <span class="mx-2" data-toggle="tooltip" data-placement="bottom"
+                              title="最后编辑于xxxx">00点54分</span>
+                        <span class="mx-2">阅读 xxxx</span>
+                        <a class="mx-2 to-com" href="#comment-block">评论 xxxx</a>
+                    </div>
+                    <div class="article-body mt-4 f-17" style="line-height:1.8">
+                        正文
+                        <blockquote class="p-1 f-14" style="border-left: 4px solid #dc3545;">
+                            <p class="m-1"><strong>版权声明：</strong>如无特殊说明，文章均为本站原创，转载请注明出处</p>
+                            <p class="m-1"><strong>本文链接：</strong>url...</p>
+                        </blockquote>
+                    </div>
+                    <div class="tag-cloud my-4">
+
+                        <a class="tags f-16" href="#">tag.name</a>
+                        <a class="tags f-16" href="#">tag.name</a>
+
+                    </div>
+                    <nav class="more-page f-16">
+                        <ul class="pagination justify-content-between">
+                            <li class="page-item">
+                                <a class="d-none d-md-block" href="#"
+                                   title="上一篇：xxxx">
+                                    <i class="fa fa-chevron-left mr-1"></i>
+                                    上一篇超链接
+                                </a>
+                                <a class="d-md-none" href="#">
+                                    <i class="fa fa-chevron-left mr-1"></i>上一篇</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--图片预览-->
+<div class="modal fade" id="img-to-big" tabindex="-1" role="dialog" aria-labelledby="img-to-bigTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 90%">
+        <img class="rounded mx-auto d-block" alt="image" style="max-width: 100%">
+    </div>
+</div>
+<!--前后文章-->
+<!--{% if article.get_pre %}-->
+<!--<div class="more-blog" id="icon-pre-blog">-->
+<!--    <a href="#">-->
+<!--        <i class="fa fa-angle-left fa-3x"></i>-->
+<!--    </a>-->
+<!--</div>-->
+<!--{% endif %}-->
+<!--{% if article.get_next %}-->
+<!--<div class="more-blog" id="icon-next-blog">-->
+<!--    <a href="{{ article.get_next.get_absolute_url }}">-->
+<!--        <i class="fa fa-angle-right fa-3x"></i>-->
+<!--    </a>-->
+<!--</div>-->
+<!--{% endif %}-->
+{% endblock %}
+
+{% block end_file %}
+
+<script src="https://cdn.bootcss.com/simplemde/1.11.2/simplemde.min.js"></script>
+
+
+{% endblock %}
