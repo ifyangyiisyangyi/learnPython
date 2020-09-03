@@ -354,23 +354,31 @@
                 </ul>
             </div>
 
-            <!--            <div class="footer-bottom">-->
-            <!--                <div class="container">-->
-            <!--                    <div class="row">-->
-            <!--                        <img src="/static/images/logo-bottom.png" alt="logo bottom" class="center-block"/><a target="_blank"-->
-            <!--                                                                        href="https://github.com/ifyangyiisyangyi/learnPython">&#x7F51;&#x9875;&#x6A21;&#x677F;</a>-->
-
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--            </div>-->
+            <footer class="container-fluid mt-4 py-0">
+                <div class="card-body text-center px-0 f-14">
+                    <p class="card-text mb-1">Copyright&nbsp;&copy;&nbsp;<span id="year-info"></span>
+                        <a href="#" target="_blank" title="博客作者的Github">ifyangyiisyangyi</a>.&nbsp;Powered&nbsp;by&nbsp;Django.
+                    </p>
+                    <p class="mb-0">
+                        <a href="http://beian.miit.gov.cn/" target="_blank">京ICP备2020034426号-1</a>&nbsp;
+                        <span id="web-day"></span>
+                    </p>
+                    <script>function getnewYear(){var d = new Date();var old = new Date('2020/09/03');
+            var x = document.getElementById("year-info");
+            x.innerHTML=d.getFullYear();var y=document.getElementById("web-day");
+            var dd=Math.floor((d.getTime() - old.getTime()) / (24 * 3600 * 1000));
+            var d_str="| 网站已续航 "+dd+" 天";y.innerHTML=d_str;}getnewYear()
+                    </script>
+                </div>
+            </footer>
         </footer>
-        <div>
-            <a>访问量:{{ count }}</a>
-            <p class="pull-right" style="font-size: 10px;">
-                <a href="/" data-scroll=""
-                   style="cursor: pointer; background-color: rgb(58, 135, 173); color: rgb(255, 255, 255); padding: 1px 3px 2px; font-size: 9.75px;"><span>back to top</span></a>
-            </p>
-        </div>
+<!--        <div>-->
+<!--            <a>访问量:{{ count }}</a>-->
+<!--            <p class="pull-right" style="font-size: 10px;">-->
+<!--                <a href="/" data-scroll=""-->
+<!--                   style="cursor: pointer; background-color: rgb(58, 135, 173); color: rgb(255, 255, 255); padding: 1px 3px 2px; font-size: 9.75px;"><span>back to top</span></a>-->
+<!--            </p>-->
+<!--        </div>-->
         <!--/.FOOTER-END-->
 
         <!--/.CONTENT END-->
