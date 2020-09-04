@@ -4,7 +4,7 @@ from django.core.paginator import Paginator, PageNotAnInteger, InvalidPage, Empt
 from django.forms import model_to_dict
 from django.http import HttpResponse
 from django.shortcuts import render
-from TestModel.models import Message, Blog, Vistor
+from TestModel.models import Message, Blog, Vistor, spider_article
 from django.http import HttpResponseRedirect
 from django.core.mail import send_mail
 
@@ -103,7 +103,7 @@ def article_show(request):
     :param request:
     :return: 分页显示文章内容
     """
-    article_obj = Article.objects.all()[0:300]  # 获取文章表里所有数据
+    article_obj = spider_article.objects.all()[0:300]  # 获取文章表里所有数据
     article_list = []
     for i in article_obj:
         article_list.append(i)

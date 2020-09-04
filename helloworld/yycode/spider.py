@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from django.http import HttpResponse
+from django.http import HttpResponse, JsonResponse
 
 from TestModel.models import spider_article
 
@@ -29,4 +29,4 @@ def article_spider(request):
         print(f'爬取第{i + 1}页')
         url_sigle_dict = get_article_page(url)
         url_dict = dict(url_dict, **url_sigle_dict)
-    return HttpResponse(url_dict)
+    return JsonResponse(url_dict)

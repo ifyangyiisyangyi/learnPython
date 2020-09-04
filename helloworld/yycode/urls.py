@@ -13,6 +13,8 @@ urlpatterns = [
     path('article_spider/', spider.article_spider),
     path('article_show/', views.article_show, name='article_show'),
     path('article/', include('article.urls')),
+
+    path('tool/', include('tool.urls'))
 ]
 
 urlpatterns += staticfiles_urlpatterns()
