@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from django.http import HttpResponse
 
-from TestModel.models import Article
+from TestModel.models import spider_article
 
 
 def get_article_page(url):
@@ -14,7 +14,7 @@ def get_article_page(url):
     for tag in ls:
         s = 'https://cloud.tencent.com' + tag.a['href']
         title = tag.a.string
-        article = Article(title=title,
+        article = spider_article(title=title,
                           linkage=s,
                           tag="python")
         article.save()

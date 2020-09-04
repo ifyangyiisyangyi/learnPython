@@ -3,19 +3,6 @@
 from django.db import models
 
 
-
-class User(models.Model):
-    '''注册表'''
-    user_name = models.CharField(max_length=300)
-    user_pwd = models.CharField(max_length=300)
-    user_mail = models.CharField(max_length=300)
-    create_time = models.DateTimeField(verbose_name="创建时间", auto_now_add=True)
-    update_time = models.DateTimeField(verbose_name="更新时间", auto_now_add=True)
-
-    # def __str__(self):
-    #     return self.__doc__ + ":user_name --> " + self.user_name
-
-
 class Message(models.Model):
     '''留言表'''
     ip = models.CharField(max_length=300, blank=True)
@@ -34,7 +21,7 @@ class Blog(models.Model):
     update_time = models.DateTimeField(verbose_name="更新时间", auto_now_add=True)
 
 
-class Article(models.Model):
+class spider_article(models.Model):
     '''文章表'''
     title = models.CharField(verbose_name="文章标题", max_length=300)
     linkage = models.CharField(verbose_name="文章链接", max_length=300)
