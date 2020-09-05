@@ -103,7 +103,7 @@ def article_show(request):
     :param request:
     :return: 分页显示文章内容
     """
-    article_obj = spider_article.objects.all()[0:300]  # 获取文章表里所有数据
+    article_obj = spider_article.objects.all()  # 获取文章表里所有数据
     article_list = []
     for i in article_obj:
         article_list.append(i)
