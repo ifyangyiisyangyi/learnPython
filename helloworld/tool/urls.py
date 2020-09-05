@@ -1,7 +1,8 @@
 from django.urls import path
-from .views import Cbvdemo
+from .views import Cbvdemo, Toolview
 
-urlpatterns = {
+urlpatterns = [
     path('Cbvdemo', Cbvdemo.as_view()),
+    path('', Toolview, name='total'),
 
-}
+]
