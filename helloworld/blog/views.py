@@ -5,7 +5,7 @@ from django.shortcuts import render
 # Create your views here.
 from django.views import generic
 
-from article.models import Article
+from blog.models import Article
 
 
 def test(request):

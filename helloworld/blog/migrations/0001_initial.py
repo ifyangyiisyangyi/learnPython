@@ -147,9 +147,9 @@ class Migration(migrations.Migration):
                 ('slug', models.SlugField(unique=True)),
                 ('is_top', models.BooleanField(default=False, verbose_name='置顶')),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to=settings.AUTH_USER_MODEL, verbose_name='作者')),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='article.Category', verbose_name='文章分类')),
-                ('keywords', models.ManyToManyField(help_text='文章关键词，用来作为SEO中keywords，最好使用长尾词，3-4个足够', to='article.Keyword', verbose_name='文章关键词')),
-                ('tags', models.ManyToManyField(to='article.Tag', verbose_name='标签')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='blog.Category', verbose_name='文章分类')),
+                ('keywords', models.ManyToManyField(help_text='文章关键词，用来作为SEO中keywords，最好使用长尾词，3-4个足够', to='blog.Keyword', verbose_name='文章关键词')),
+                ('tags', models.ManyToManyField(to='blog.Tag', verbose_name='标签')),
             ],
             options={
                 'verbose_name': '文章',

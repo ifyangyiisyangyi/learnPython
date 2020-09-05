@@ -9,7 +9,7 @@ def get_article_page(url):
     r = requests.request('get', url=url)
     html = r.text
     soup = BeautifulSoup(html, 'lxml')
-    ls = soup('h3', class_="com-article-panel-title")
+    ls = soup('h3', class_="com-blog-panel-title")
     url_dict = {}
     for tag in ls:
         s = 'https://cloud.tencent.com' + tag.a['href']
