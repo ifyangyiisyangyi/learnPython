@@ -1,37 +1,7 @@
-{% load cache %}
+
 {% load blog_tags static %}
 
-<!--个人空间-->
-<div class="card border-0 rounded-0 px-3 mb-2 mb-md-3 d-none d-lg-block" id="home-card">
-    <div class="card-header bg-white px-0">
-        <strong><i class="fa fa-paper-plane mr-2 f-17"></i>个人空间</strong>
-        <img class="float-right" id="theme-img"
-             src="{% if request.COOKIES.toggleTheme == 'dark' %}{% static 'blog/img/toggle-dark.png' %}{% else %}{% static 'blog/img/toggle-light.png' %}{% endif %}"
-             alt="theme-toggle" title="切换主题">
-    </div>
-    <div class="card-body px-0 pt-3 pb-1">
-        <div class="row text-center">
-            <div class="col">
-                <a href="{{ my_github }}" target="_blank" title="进入博主的Github查看博客源码">
-                    <img style="max-width:40px" alt="博主的github" src="{% static 'blog/img/github.png' %}">
-                    <p class="mt-2">Github</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="{% url 'blog:timeline'%}" target="_blank" title="查看网站建站历程">
-                    <img style="max-width:40px" alt="网站的建站历程" src="{% static 'blog/img/blog.png' %}">
-                    <p class="mt-2">Timeline</p>
-                </a>
-            </div>
-            <div class="col">
-                <a href="{% url 'rss'%}" target="_blank" title="订阅博客">
-                    <img style="max-width:40px" alt="订阅博客RSS" src="{% static 'blog/img/rss.png' %}">
-                    <p class="mt-2">RSS订阅</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!--文章分类-->
 <div class="card border-0 rounded-0 px-3 mb-2 mb-md-3" id="category-card">
     <div class="card-header bg-white px-0">

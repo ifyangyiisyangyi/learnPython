@@ -4,19 +4,20 @@
 {% block base_content %}
 <div class="container">
     <div class="row">
+        <div class="col-lg-4">
+            {% include 'blog/tags/base_right.html' %}
+        </div>
         <div class="col-lg-8">
 
-            <div class="text-secondary font-weight-bold py-2 f-15 choice">
+<!--            <div class="text-secondary font-weight-bold py-2 f-15 choice">-->
 
 
-            </div>
+<!--            </div>-->
             {% load_article_summary articles %}
 
 
         </div>
-        <div class="col-lg-4">
-            文章分类
-        </div>
+
     </div>
 </div>
 {% endblock %}

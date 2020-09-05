@@ -32,13 +32,13 @@ def keywords_to_str(art):
 @register.simple_tag
 def get_tag_list():
     '''返回标签列表'''
-    return Tag.objects.annotate(total_num=Count('blog')).filter(total_num__gt=0)
+    return Tag.objects.annotate(total_num=Count('article')).filter(total_num__gt=0)
 
 
 @register.simple_tag
 def get_category_list():
     '''返回分类列表'''
-    return Category.objects.annotate(total_num=Count('blog')).filter(total_num__gt=0)
+    return Category.objects.annotate(total_num=Count('article')).filter(total_num__gt=0)
 
 
 @register.inclusion_tag('blog/tags/article_list.html')

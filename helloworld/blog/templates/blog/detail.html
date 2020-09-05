@@ -1,53 +1,76 @@
 {% extends 'blog/base.html' %}
+{% load blog_tags static %}
 {% block base_content %}
+
+<!--{% block head_title %}{{ article.title }}_{{ article.category }}{% endblock %}-->
+
+{% block metas %}
+<meta name="description" content="{{ article.summary }}">
+<meta name="keywords" content="{% keywords_to_str article %}">
+{% endblock %}
+
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-lg-9 col-xl-10">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb bg-white border-0 rounded-0 mb-2 py-2 f-15">
                     <li class="breadcrumb-item">
-                        <i class="fa fa-home mr-1"></i><a href="#">首页</a>
+                        <i class="fa fa-home mr-1"></i><a href="{% url 'blog:index' %}">首页</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="#">文章分类</a>
-                    </li>
-                    <li class="breadcrumb-item active d-none d-md-block" aria-current="page">文章标题</li>
+                        <a href="{{ article.category.get_absolute_url }}">{{ article.category}}</a></li>
+                    <li class="breadcrumb-item active d-none d-md-block" aria-current="page">{{ article.title }}</li>
                     <li class="breadcrumb-item active d-md-none" aria-current="page">当前位置</li>
                 </ol>
             </nav>
             <div class="card rounded-0 border-0" id="article">
                 <div class="card-body px-2 px-md-3 pb-0">
-                    <h1 class="card-title text-center font-weight-bold text-info">文章标题</h1>
+                    <h1 class="card-title text-center font-weight-bold text-info">{{ article.title }}</h1>
                     <hr>
                     <div class="text-center f-13">
                         <span class="mx-2" data-toggle="tooltip" data-placement="bottom"
-                              title="最后编辑于xxxx">00点54分</span>
-                        <span class="mx-2">阅读 xxxx</span>
-                        <a class="mx-2 to-com" href="#comment-block">评论 xxxx</a>
+                              title="最后编辑于{{ article.update_date|date:'Y年m月d日' }}">{{ article.create_date }}</span>
+                        <span class="mx-2">阅读 {{ article.views }}</span>
+                        <a class="mx-2 to-com" href="#comment-block">评论 100000+</a>
                     </div>
                     <div class="article-body mt-4 f-17" style="line-height:1.8">
-                        {{ body.body }}
+                        {{ article.body|safe }}
                         <blockquote class="p-1 f-14" style="border-left: 4px solid #dc3545;">
                             <p class="m-1"><strong>版权声明：</strong>如无特殊说明，文章均为本站原创，转载请注明出处</p>
-                            <p class="m-1"><strong>本文链接：</strong>url...</p>
+                            <p class="m-1"><strong>本文链接：</strong>{{ site.url }}{{ article.get_absolute_url }}</p>
                         </blockquote>
                     </div>
                     <div class="tag-cloud my-4">
 
-                        <a class="tags f-16" href="#">tag.name</a>
-                        <a class="tags f-16" href="#">tag.name</a>
+
 
                     </div>
+
                     <nav class="more-page f-16">
                         <ul class="pagination justify-content-between">
                             <li class="page-item">
-                                <a class="d-none d-md-block" href="#"
-                                   title="上一篇：xxxx">
+                                {% if article.get_pre %}
+                                <a class="d-none d-md-block" href="{{ article.get_pre.get_absolute_url }}"
+                                   title="上一篇：{{ article.get_pre.title }}">
                                     <i class="fa fa-chevron-left mr-1"></i>
-                                    上一篇超链接
+                                    {{ article.get_pre.title|truncatechars:18 }}
                                 </a>
-                                <a class="d-md-none" href="#">
+                                <a class="d-md-none" href="{{ article.get_pre.get_absolute_url }}">
                                     <i class="fa fa-chevron-left mr-1"></i>上一篇</a>
+                                {% endif %}
+                            </li>
+                            <li class="page-item">
+                                {% if article.get_next %}
+                                <a class="d-none d-md-block" href="{{ article.get_next.get_absolute_url }}"
+                                   title="下一篇：{{ article.get_next.title }}">
+                                    {{ article.get_next.title|truncatechars:18 }}
+                                    <i class="fa fa-chevron-right ml-1"></i>
+                                </a>
+                                <a class="d-md-none" href="{{ article.get_next.get_absolute_url }}">
+                                    下一篇<i class="fa fa-chevron-right ml-1"></i>
+                                </a>
+                                {% endif %}
                             </li>
                         </ul>
                     </nav>
@@ -65,20 +88,20 @@
     </div>
 </div>
 <!--前后文章-->
-<!--{% if blog.get_pre %}-->
-<!--<div class="more-blog" id="icon-pre-blog">-->
-<!--    <a href="#">-->
-<!--        <i class="fa fa-angle-left fa-3x"></i>-->
-<!--    </a>-->
-<!--</div>-->
-<!--{% endif %}-->
-<!--{% if blog.get_next %}-->
-<!--<div class="more-blog" id="icon-next-blog">-->
-<!--    <a href="{{ blog.get_next.get_absolute_url }}">-->
-<!--        <i class="fa fa-angle-right fa-3x"></i>-->
-<!--    </a>-->
-<!--</div>-->
-<!--{% endif %}-->
+{% if blog.get_pre %}
+<div class="more-blog" id="icon-pre-blog">
+    <a href="#">
+        <i class="fa fa-angle-left fa-3x"></i>
+    </a>
+</div>
+{% endif %}
+{% if blog.get_next %}
+<div class="more-blog" id="icon-next-blog">
+    <a href="{{ blog.get_next.get_absolute_url }}">
+        <i class="fa fa-angle-right fa-3x"></i>
+    </a>
+</div>
+{% endif %}
 {% endblock %}
 
 {% block end_file %}
