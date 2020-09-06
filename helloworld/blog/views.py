@@ -3,20 +3,13 @@ import time
 import markdown
 from django.conf import settings
 from django.core.cache import cache
-from django.forms import model_to_dict
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import get_object_or_404
 
 # Create your views here.
 from django.views import generic
 from markdown.extensions.toc import TocExtension, slugify
 
 from blog.models import Article, Category, Tag
-
-
-def test(request):
-    body = model_to_dict(Article.objects.get(id=1))
-    print(body)
-    return render(request, 'blog/detail.html', {'body': body})
 
 
 class IndexView(generic.ListView):
@@ -60,6 +53,7 @@ class DetailView(generic.DetailView):
         md_key = '{}_md_{}'.format(obj.id, ud)
         cache_md = cache.get(md_key)
         if cache_md:
+            # print("从缓存取出")
             obj.body, obj.toc = cache_md
         else:
             md = markdown.Markdown(extensions=[
@@ -70,6 +64,7 @@ class DetailView(generic.DetailView):
             obj.body = md.convert(obj.body)
             obj.toc = md.toc
             cache.set(md_key, (obj.body, obj.toc), 60 * 60 * 12)
+        # print(f"打印:{obj}")
         return obj
 
 
