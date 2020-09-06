@@ -12,10 +12,11 @@
 {% block base_content %}
 <div class="container">
     <div class="row">
+        <div class="col-lg-4">
+            {% include 'blog/tags/base_right.html' %}
+        </div>
         <div class="col-lg-8">
-            <div class="col-lg-4">
-                {% include 'blog/tags/base_right.html' %}
-            </div>
+
             <div class="description bg-white px-3 pt-3 pb-1">
                 <p class="float-right mb-0">共<span class="mx-2 text-info">{{ paginator.count }}</span>篇</p>
                 <h1 class="f-17"><strong>{{ search_tag }}：{{ search_instance.name }}</strong></h1>
