@@ -75,3 +75,30 @@ $("#theme-img").click(function(){
     }
 })
 
+// 网站运行时间
+//function getnewYear() {
+//    var d = new Date();var old = new Date('2020/09/03');
+//    var x = document.getElementById("year-info");
+//    x.innerHTML=d.getFullYear();var y=document.getElementById("web-day");
+//    var dd=Math.floor((d.getTime() - old.getTime()) / (24 * 3600 * 1000));
+//    var d_str="| 网站已运行 "+dd+" 天";y.innerHTML=d_str;
+//    }getnewYear()
+//
+
+function show_date_time() {
+    window.setTimeout("show_date_time()", 1000);
+    let BirthDay = new Date("2020/09/03 12:00:00"); //建站日期
+    let today = new Date();
+    let timeold = (today.getTime() - BirthDay.getTime());
+    let sectimeold = timeold / 1000;
+    let  secondsold = Math.floor(sectimeold);
+    let  msPerDay = 24 * 60 * 60 * 1000;
+    let  e_daysold = timeold / msPerDay;
+    let daysold = Math.floor(e_daysold);
+    let e_hrsold = (daysold - e_daysold) * -24;
+    let  hrsold = Math.floor(e_hrsold);
+    let  e_minsold = (hrsold - e_hrsold) * -60;
+    let  minsold = Math.floor((hrsold - e_hrsold) * -60);
+    let  seconds = Math.floor((minsold - e_minsold) * -60);
+    webtime.innerHTML = "本网站已运行  " + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+}show_date_time()
