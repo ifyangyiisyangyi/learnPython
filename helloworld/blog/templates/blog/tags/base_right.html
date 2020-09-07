@@ -27,7 +27,7 @@
         <div class="tag-cloud">
             {% get_tag_list as tag_list %}
             {% for tag in tag_list %}
-            <a href="{{ tag.get_absolute_url }}" class="tags f-16" id="tag-{{ forloop.counter }}"
+            <a href="{{ tag.get_absolute_url }}" class="tags f-13" id="tag-{{ forloop.counter }}"
                title="【{{ tag.name }}】标签下有{{ tag.total_num }}篇文章">{{ tag.name }}</a>
             {% endfor %}
         </div>

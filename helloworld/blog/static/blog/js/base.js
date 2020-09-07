@@ -100,5 +100,5 @@ function show_date_time() {
     let  e_minsold = (hrsold - e_hrsold) * -60;
     let  minsold = Math.floor((hrsold - e_hrsold) * -60);
     let  seconds = Math.floor((minsold - e_minsold) * -60);
-    webtime.innerHTML = "本网站已运行  " + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+    webtime.innerHTML = "已运行  " + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
 }show_date_time()
