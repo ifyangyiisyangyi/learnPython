@@ -16,9 +16,9 @@
     <script src="https://cdn.bootcss.com/popper.js/1.14.7/umd/popper.min.js" rel="external nofollow"></script>
 
     <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
-    <script src="https://cdn.bootcss.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="external nofollow"></script>
+<!--    <script src="https://cdn.bootcss.com/bootstrap/4.3.1/js/bootstrap.min.js" rel="external nofollow"></script>-->
     <!-- blog CSS -->
-    <link href="{% static '/blog/css/base.css' %}?v=20191123.0568" rel="stylesheet">
+    <link href="{% static '/blog/css/base.css' %}" rel="stylesheet">
 </head>
 <body>
 <!--导航开始-->
@@ -27,7 +27,7 @@
 <main>{% block base_content %}{% endblock %}</main>
 <footer class="container-fluid mt-4 py-0">
     <!--    card-body里由"px-0 f-14"改为“p-0”,去除间距-->
-    <div class="card-body text-center p-0">
+    <div class="card-body text-center px-0 f-14">
         <p class="card-text mb-1">Copyright&nbsp;&copy;&nbsp;<span></span>
             <a href="https://github.com/ifyangyiisyangyi/learnPython" target="_blank" title="博客作者的Github">ifyangyiisyangyi</a>.&nbsp;Powered&nbsp;by&nbsp;Django.
         </p>
