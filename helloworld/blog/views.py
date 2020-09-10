@@ -9,6 +9,7 @@ from django.shortcuts import get_object_or_404
 from django.views import generic
 from markdown.extensions.toc import TocExtension, slugify
 
+from TestModel.models import Vistor
 from blog.models import Article, Category, Tag
 
 
@@ -20,6 +21,7 @@ class IndexView(generic.ListView):
     paginate_orphans = getattr(settings, 'BASE_ORPHANS', 0)
 
     def get_ordering(self):
+        save_visitor(self.request)
         sort = self.kwargs.get('sort')
         if sort == 'v':
             return ('-views', '-update_date', '-id')
@@ -120,3 +122,15 @@ class TagView(generic.ListView):
         context_data['search_tag'] = '文章标签'
         context_data['search_instance'] = tag
         return context_data
+
+
+def save_visitor(request):
+    try:
+        if 'HTTP_X_FORWARDED_FOR' in request.META:
+            ip = request.META['HTTP_X_FORWARDED_FOR']
+        else:
+            ip = request.META['REMOTE_ADDR']
+        vistor = Vistor(ip=ip, count=1)
+        vistor.save()
+    except:
+        print("保存ip失败！")
