@@ -1,7 +1,6 @@
 """
 gy数据处理
 """
-import xlwt
 from openpyxl import Workbook
 
 # 字段声明
@@ -34,26 +33,26 @@ def get_data():
     return data_time, lx, ly, rx, ry, extra
 
 
-# def save_data():
-#     '''
-#     保存数据
-#     :return: 数据保存excel
-#     '''
-#     fields = ['RX1万次左极限值', 'RX2万次左极限值', 'RX3万次左极限值']
-#     data_time, lx, ly, rx, ry, extra = get_data()
-#     write_book = xlwt.Workbook(encoding='utf-8')
-#     sheet = write_book.add_sheet("摇杆数据分析", cell_overwrite_ok=True)
-#     for i in range(len(fields)):
-#         sheet.write(0, i, fields[i])
-#     for a in range(len(lx)):
-#         sheet.write(a + 1, 0, lx[a])
-#     for b in range(len(ly)):
-#         sheet.write(b + 1, 1, ly[b])
-#     for c in range(len(rx)):
-#         sheet.write(c + 1, 2, rx[c])
-#     write_book.save('RX1万次左极限值.xlsx')
+def save_data():
+    '''
+    保存数据
+    :return: 数据保存excel，格式为xlsx
+    '''
+    data_time, lx, ly, rx, ry, extra = get_data()
+    wb = Workbook()
+    sheet = wb.active
+    sheet.title = '摇杆数据分析'
+    fields = ['RX1万次左极限值', 'RX2万次左极限值', 'RX3万次左极限值']
+    for i in range(len(fields)):
+        sheet.cell(row=1, column=i + 1).value = fields[i]
+    for i, element in enumerate(lx):
+        sheet.cell(row=i + 2, column=1).value = int(element)
+    for i, element in enumerate(ly):
+        sheet.cell(row=i + 2, column=2).value = int(element)
+    for i, element in enumerate(rx):
+        sheet.cell(row=i + 2, column=3).value = int(element)
+    wb.save('RX1万次左极限值.xlsx')
 
 
 if __name__ == '__main__':
-    # save_data()
-    pass
+    save_data()
