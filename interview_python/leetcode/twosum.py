@@ -14,9 +14,18 @@ class Solution:
                 if nums[i] + nums[j] == target:
                     return [i, j]
 
+# 哈希表，时间复杂度 O(N)
+class Solution2:
+    def twosum(self, nums:List[int], target:int) -> List[int]:
+        hashtable = dict()
+        for k, v in enumerate(nums):
+            if target - v in hashtable:
+                return [hashtable[target - v], k]
+            hashtable[nums[k]] = k
+        return []
 
 if __name__ == '__main__':
-    a = Solution()
+    a = Solution2()
     assert a.twosum([2, 7, 11, 15], 9) == [0, 1]
     assert a.twosum([3, 2, 4], 6) == [1, 2]
     assert a.twosum([3, 3], 6) == [0, 1]
